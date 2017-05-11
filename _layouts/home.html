@@ -1,9 +1,18 @@
 {% include header.html %}
-{{ content }}
-<!-- This loops through the paginated posts -->
 
-{% for post in site.posts %}	
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<!-- This loops through the paginated posts -->
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
+  	{{ content }}
+  </div>
+</div>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
+  	{% for post in site.posts %}	
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>			
-{% endfor %}	
+{% endfor %}
+  </div>
+</div>
+	
 {% include footer.html %}
