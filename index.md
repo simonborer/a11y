@@ -5,3 +5,8 @@
 layout: home
 ---
 # Resources
+
+These are things for artists to remember.
+
+Publishing deadlines. Festival applications. Venue contacts. That sort of thing.
+
