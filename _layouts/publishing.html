@@ -1,6 +1,5 @@
 {% include header.html %}
 
-<!-- This loops through the paginated posts -->
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
   	{{ content }}
@@ -11,15 +10,15 @@
     <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp collection-table">
       <thead>
         <tr>
-          <th>Next deadline</th>
+          <th class="mdl-data-table__cell--non-numeric">Next deadline</th>
           <th class="mdl-data-table__cell--non-numeric">Link</th>
-          <th></th>
+          <th class="mdl-data-table__cell--non-numeric"></th>
         </tr>
       </thead>
       <tbody>
       {% for publish in site.publishing %}  
         <tr>
-          <td>{{ publish.next-deadline }}</td>
+          <td class="mdl-data-table__cell--non-numeric">{{ publish.next-deadline }}</td>
           <td class="mdl-data-table__cell--non-numeric"><a href="{{ publish.link }}">{{ publish.title }}</a></td>
           <td class="mdl-data-table__cell--non-numeric">
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" data-toggle="{{ publish.title | handleize }}">
