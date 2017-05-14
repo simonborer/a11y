@@ -29,7 +29,7 @@
         </tr>
         <tr data-toggled-by="{{ publish.title | handleize }}" class="show">
           <td class="mdl-data-table__cell--non-numeric" colspan="3">
-            {{ publish.content }}
+            {{ publish.content | markdownify }}
           </td>
         </tr>
       {% endfor %}

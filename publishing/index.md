@@ -1,4 +1,4 @@
 ---
-layout: collection
+layout: publishing
 ---
 # Places that publish things
