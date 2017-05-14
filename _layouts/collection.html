@@ -9,7 +9,7 @@
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
   	{% for publish in site.publishing %}	
-    <h2><a href="../publishing/{{ publish.name }}">{{ publish.title }}</a></h2>
+    <h2><a href="{{ publish.slug }}">{{ publish.title }}</a></h2>
     <div>Next deadline: {{ publish.next-deadline }}</div>		
 	{% endfor %}
   </div>

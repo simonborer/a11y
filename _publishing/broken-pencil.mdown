@@ -1,5 +1,5 @@
 ---
-name: broken-pencil
+slug: broken-pencil
 title: Broken Pencil
 next-deadline: 2017-07-15
 contact: mailto:editor@brokenpencil.com
