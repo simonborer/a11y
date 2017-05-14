@@ -13,13 +13,17 @@
         <tr>
           <th>Next deadline</th>
           <th class="mdl-data-table__cell--non-numeric">Link</th>
+          <th class="mdl-data-table__cell--non-numeric">Details</th>
         </tr>
       </thead>
       <tbody>
       {% for publish in site.publishing %}  
         <tr>
           <td>{{ publish.next-deadline }}</td>
-          <td><a href="{{ publish.link }}">{{ publish.title }}</a></td>
+          <td class="mdl-data-table__cell--non-numeric"><a href="{{ publish.link }}">{{ publish.title }}</a></td>
+          <td class="mdl-data-table__cell--non-numeric"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Show details
+</button></td>
         </tr>
       {% endfor %}
       </tbody>
