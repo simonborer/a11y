@@ -8,7 +8,7 @@
     <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
         <ul class="mdl-list">
             {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %}
-            {% if label != 'posts' %}
+            {% if collection != 'posts' %}
             <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content"><a href="{{ label }}">{{ label }}</a></span>
             </li>
