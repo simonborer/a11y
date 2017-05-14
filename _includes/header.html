@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-blue.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+    <style>
+    html {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'Playfair Display', serif;
+    }
+    </style>
 </head>
 
 <body>
@@ -22,13 +33,8 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    
-                    {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %}
-            {% if label == "labelposts" %}
-            {% else %}
-            <a class="mdl-navigation__link" href="{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' }}</a>
-            {% endif %}
-            {% endfor %}
+                    {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %} {% if label == "labelposts" %} {% else %}
+                    <a class="mdl-navigation__link" href="{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' }}</a> {% endif %} {% endfor %}
                 </nav>
             </div>
         </header>
