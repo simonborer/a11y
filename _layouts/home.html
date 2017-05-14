@@ -10,7 +10,7 @@
             {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %}
             {% if collection != 'posts' %}
             <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content"><a href="{{ label }}">{{ label }}</a></span>
+                <span class="mdl-list__item-primary-content"><a href="">{{ label }}</a></span>
             </li>
             {% endif %}
             {% endfor %}
