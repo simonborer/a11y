@@ -1,0 +1,17 @@
+.mdl-layout__container {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.mdl-layout-title > a {
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
