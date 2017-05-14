@@ -31,4 +31,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 collections: 
-  - publishing
+  - publishing:
+    - output: true
+
