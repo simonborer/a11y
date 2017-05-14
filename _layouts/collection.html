@@ -8,10 +8,22 @@
 </div>
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
-  	{% for publish in site.publishing %}	
-    <a href="{{ publish.link }}">{{ publish.title }}</a>
-    <div>Next deadline: {{ publish.next-deadline }}</div>		
-	{% endfor %}
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+      <thead>
+        <tr>
+          <th>Next deadline</th>
+          <th class="mdl-data-table__cell--non-numeric">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for publish in site.publishing %}  
+        <tr>
+          <td>{{ publish.next-deadline }}</td>
+          <td><a href="{{ publish.link }}">{{ publish.title }}</a></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
   </div>
 </div>
 	
