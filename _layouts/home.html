@@ -8,9 +8,14 @@
 </div>
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
-  	{% for post in site.posts %}	
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>		
-	{% endfor %}
+  	
+{% for collection in site.collections %}
+
+  {% assign name = collection.label %}
+
+    <a href="{{ name }}">{{ name }}</a>
+
+{% endfor %}
   </div>
 </div>
 	
