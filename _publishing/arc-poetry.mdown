@@ -1,7 +1,7 @@
 ---
 title: Arc Poetry
 next-deadline: 2017-07-01
-url: https://arcpoetry.submittable.com/submit/82835/poems-2017-annual-themed-issue
+link: https://arcpoetry.submittable.com/submit/82835/poems-2017-annual-themed-issue
 ---
 
 Arc accepts unso­licited sub­mis­sions of pre­vi­ously unpub­lished poems, on any sub­ject, in any form.
