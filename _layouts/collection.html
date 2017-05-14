@@ -13,7 +13,6 @@
         <tr>
           <th>Next deadline</th>
           <th class="mdl-data-table__cell--non-numeric">Link</th>
-          <th class="mdl-data-table__cell--non-numeric">Details</th>
         </tr>
       </thead>
       <tbody>
@@ -21,9 +20,16 @@
         <tr>
           <td>{{ publish.next-deadline }}</td>
           <td class="mdl-data-table__cell--non-numeric"><a href="{{ publish.link }}">{{ publish.title }}</a></td>
-          <td class="mdl-data-table__cell--non-numeric"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-  Show details
-</button></td>
+          <td class="mdl-data-table__cell--non-numeric">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" data-toggle="{{ publish.title | handleize }}">
+              Show details
+            </button>
+          </td>
+        </tr>
+        <tr data-toggled-by="{{ publish.title | handleize }}" class="show">
+          <td class="mdl-data-table__cell--non-numeric" colspan="3">
+            {{ publish.content }}
+          </td>
         </tr>
       {% endfor %}
       </tbody>

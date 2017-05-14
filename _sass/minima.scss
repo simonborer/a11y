@@ -1,6 +1,22 @@
-html {
-	font-family: 'Raleway', sans-serif;
+.mdl-layout__container {
+    font-family: 'Raleway', sans-serif;
 }
-h1, h2, h3 {
-	font-family: 'Playfair Display', serif;
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.mdl-layout-title > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: auto;
 }
