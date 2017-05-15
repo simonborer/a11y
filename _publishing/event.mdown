@@ -1,6 +1,6 @@
 ---
 title: Event Poetry and Prose
-next-deadline: 9999-99-99
+next-deadline: 2100-12-31
 link: http://eventmagazine.submittable.com/submit
 ---
 

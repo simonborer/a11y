@@ -1,6 +1,6 @@
 ---
 title: Canadian Poetry
-next-deadline: 9999-99-99
+next-deadline: 2100-12-31
 link: http://canadianpoetry.org/contact/
 ---
 
