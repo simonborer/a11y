@@ -16,7 +16,8 @@
         </tr>
       </thead>
       <tbody>
-      {% for publish in site.publishing | sort: 'publish.next-deadline' %}  
+
+      {% for publish in site.publishing | sort: 'next-deadline' | reverse%}  
         <tr>
           <td class="mdl-data-table__cell--non-numeric">{{ publish.next-deadline }}</td>
           <td class="mdl-data-table__cell--non-numeric"><a href="{{ publish.link }}">{{ publish.title }}</a></td>
