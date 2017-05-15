@@ -53,9 +53,14 @@ h3,
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %} {% if label == "labelposts" %} {% else %}
-                    <a class="mdl-navigation__link" href="{{ site.url }}{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' }}</a> {% endif %} {% endfor %}
+                    <a href="mailto:simon.borer@gmail.com" class="mdl-navigation__link">contact</a>
                 </nav>
             </div>
         </header>
+        <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %} {% if label == "labelposts" %} {% else %}
+             <a class="mdl-navigation__link" href="{{ site.url }}{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' }}</a> {% endif %} {% endfor %}
+        </nav>
+      </div>
         <main class="mdl-layout__content">
