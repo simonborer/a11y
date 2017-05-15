@@ -1,7 +1,0 @@
----
-title: Canadian Poetry
-next-deadline: N/A
-link: http://canadianpoetry.org/contact/
----
-
-Not much information. Submit via the link.
