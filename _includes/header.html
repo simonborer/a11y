@@ -9,37 +9,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-indigo.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Catamaran|Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Roboto:300" rel="stylesheet">
     <link href="{{ site.url }}assets/main.css" rel="stylesheet">
     <style>
     .mdl-layout__container {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1,
-h2,
-h3,
-.mdl-layout-title {
-    font-family: 'Catamaran', serif;
-}
-
-.mdl-layout-title > a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hide {
-	display: none;
-}
-
-.show {
-	display: auto;
-}
-
-.collection-table {
-	white-space: normal;
-	width: 100%;
-}
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    .mdl-layout-title {
+        font-family: 'Catamaran', serif;
+    }
+    
+    .mdl-layout-title > a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .show {
+        display: auto;
+    }
+    
+    .collection-table {
+        white-space: normal;
+        width: 100%;
+    }
     </style>
 </head>
 
@@ -58,9 +58,9 @@ h3,
             </div>
         </header>
         <div class="mdl-layout__drawer">
-        <nav class="mdl-navigation">
-          {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %} {% if label == "labelposts" %} {% else %}
-             <a class="mdl-navigation__link" href="{{ site.url }}{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' }}</a> {% endif %} {% endfor %}
-        </nav>
-      </div>
+            <nav class="mdl-navigation">
+                {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %} {% if label == "labelposts" %} {% else %}
+                <a class="mdl-navigation__link" href="{{ site.url }}{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' }}</a> {% endif %} {% endfor %}
+            </nav>
+        </div>
         <main class="mdl-layout__content">
