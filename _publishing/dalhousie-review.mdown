@@ -1,6 +1,6 @@
 ---
 title: The Dalhousie Review
-next-deadline: N/A
+next-deadline: NA
 link: https://ojs.library.dal.ca/dalhousiereview/pages/view/contribute
 ---
 
