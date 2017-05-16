@@ -40,21 +40,22 @@
         white-space: normal;
         width: 100%;
     }
+    
     .mdl-data-table th {
-            padding-top: 12px;
-        }
+        padding-top: 12px;
+    }
+    
     @media screen and (min-width: 768px) {
         .mdl-data-table th {
             padding-top: 0;
         }
     }
-    
     </style>
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="custom-header mdl-layout__header mdl-layout__header--waterfall">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title"><a href="{{ site.url }}">The Good Punk</a></span>
                 <div class="mdl-layout-spacer"></div>
@@ -65,8 +66,7 @@
         </header>
         <div class="mdl-layout__drawer">
             <nav class="mdl-navigation">
-                <a href="{{ site.url }}" class="mdl-navigation__link">Home</a>
-                {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %} {% if label == "labelposts" %} {% else %}
+                <a href="{{ site.url }}" class="mdl-navigation__link">Home</a> {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %} {% if label == "labelposts" %} {% else %}
                 <a class="mdl-navigation__link" href="{{ site.url }}{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' | capitalize }}</a> {% endif %} {% endfor %}
             </nav>
         </div>
