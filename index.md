@@ -7,7 +7,7 @@ layout: home
 
 # These are things for artists to remember.
 
-## Especially new poets, musicians, and writers.
+**Especially new poets, musicians, and writers.**
 
 Publishing deadlines. Festival applications. Venue contacts. That sort of thing.
 
