@@ -9,5 +9,8 @@ layout: home
 
 ## Especially new poets, musicians, and writers.
 
-### Publishing deadlines. Festival applications. Venue contacts. That sort of thing.
+Publishing deadlines. Festival applications. Venue contacts. That sort of thing.
 
+It's focused on Toronto, because that's where I am. But if you know of something that should be listed here, by all means, [drop me a line](mailto:simon.borer@gmail.com).
+
+And please, for the love of Pete, don't take anything here as gospel. I'm trying my best to stay on top of things, but please *please* don't miss a deadline because you took my word for it.
