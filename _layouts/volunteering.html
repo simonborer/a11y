@@ -1,0 +1,39 @@
+{% include header.html %}
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
+  	{{ content }}
+  </div>
+</div>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-cell--12-col-tablet">
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp collection-table">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Link</th>
+          <th class="mdl-data-table__cell--non-numeric"></th>
+        </tr>
+      </thead>
+      <tbody>
+      {% assign sorted = (site.volunteering) %}
+      {% for volunteer in sorted %}  
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"><a href="{{ volunteer.link }}">{{ volunteer.title }}</a></td>
+          <td>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" data-toggle="{{ volunteer.title | handleize }}">
+              Show details
+            </button>
+          </td>
+        </tr>
+        <tr data-toggled-by="{{ volunteer.title | handleize }}" class="show">
+          <td class="mdl-data-table__cell--non-numeric" colspan="3">
+            {{ volunteer.content | markdownify }}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+	
+{% include footer.html %}
