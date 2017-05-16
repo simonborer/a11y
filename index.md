@@ -4,9 +4,10 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-# Resources
 
-These are things for artists to remember.
+# These are things for artists to remember.
 
-Publishing deadlines. Festival applications. Venue contacts. That sort of thing.
+## Especially new poets, musicians, and writers.
+
+### Publishing deadlines. Festival applications. Venue contacts. That sort of thing.
 
