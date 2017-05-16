@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Simon Borer - Resources</title>
+    <title>The Good Punk</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -47,7 +47,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="custom-header mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title"><a href="{{ site.url }}">Living Memory</a></span>
+                <span class="mdl-layout-title"><a href="{{ site.url }}">The Good Punk</a></span>
                 <div class="mdl-layout-spacer"></div>
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a href="mailto:simon.borer@gmail.com" class="mdl-navigation__link">contact</a>
@@ -56,8 +56,9 @@
         </header>
         <div class="mdl-layout__drawer">
             <nav class="mdl-navigation">
+                <a href="{{ site.url }}" class="mdl-navigation__link">Home</a>
                 {% for collection in site.collections %} {% capture label %}{{ collection | first }}{% endcapture %} {% if label == "labelposts" %} {% else %}
-                <a class="mdl-navigation__link" href="{{ site.url }}{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' }}</a> {% endif %} {% endfor %}
+                <a class="mdl-navigation__link" href="{{ site.url }}{{ label | replace: 'label', '' }}">{{ label | replace: 'label', '' | capitalize }}</a> {% endif %} {% endfor %}
             </nav>
         </div>
         <main class="mdl-layout__content">
