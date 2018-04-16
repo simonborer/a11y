@@ -4,10 +4,10 @@ module.exports = {
   site: {
     title: 'Accessibility & Usability',
     description: 'Posts and slides',
-    basePath: process.env.NODE_ENV === 'production' ? '/nanogen' : '',
+    basePath: process.env.NODE_ENV === 'production' ? '' : '',
     projects
   },
   build: {
-    outputPath: process.env.NODE_ENV === 'production' ? './docs' : './public'
+    outputPath: process.env.NODE_ENV === 'production' ? './docs' : './docs'
   }
 };
