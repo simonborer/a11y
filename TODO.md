@@ -1,0 +1,1 @@
+- /scripts/build.js:Remove empty directories in /slides/
