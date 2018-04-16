@@ -1,7 +1,0 @@
----
-title: Canadian Poetry
-next-deadline: 2100-12-31
-link: http://canadianpoetry.org/contact/
----
-
-Not much information. Submit via the link.

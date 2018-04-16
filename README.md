@@ -1,17 +1,21 @@
-# simonborer.github.io
+# NanoGen
 
-TODO:
-- 'add to google calendar' link for deadlines
-- custom domain
-- add sections for:  
-	- chapbook publishers
-	- social media checklists
-	- unions
-	- grants
-	- festivals
-	- performance opportunities
-	- walkthroughs (podcasts, spotify, etc.)
-	- other resources like house show networks
-- run bash cron `wget -N --no-check-certificate` against links to check for updates
-	- namespace files (submittable links all return `submit` as title)
-	- trigger email notification on new content
+Micro static site generator in Node.js
+
+See the post: https://medium.com/douglas-matoso-english/build-static-site-generator-nodejs-8969ebe34b22
+
+See the example site generated at: https://doug2k1.github.io/nanogen
+
+## Setup
+
+```console
+$ npm i
+$ npm run build
+$ npm run serve
+```
+
+Go to http://localhost:5000 to see the generated site.
+
+## How to use
+
+If you want to use NanoGen to generate your own site, just fork this repository and add your content to the `src` folder.

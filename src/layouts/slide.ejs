@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <%- include('../partials/head') %>
+  <link rel="stylesheet" href="<%= site.basePath %>/assets/css/reveal.css">
+  <link rel="stylesheet" href="<%= site.basePath %>/assets/css/solarized.css">
+</head>
+<body>
+
+  <%- body %>
+
+<script src="<%= site.basePath %>/assets/javascript/reveal.js"></script>
+<script>
+      Reveal.initialize();
+    </script>
+</body>
+</html>
