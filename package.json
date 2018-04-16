@@ -12,15 +12,24 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "foundation-sites": "^6.4.4-rc1"
+  },
   "devDependencies": {
+    "autoprefixer": "^8.3.0",
     "cross-env": "^5.1.4",
     "delete-empty": "^2.0.0",
     "ejs": "^2.5.7",
     "front-matter": "^2.3.0",
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^4.0.1",
     "marked": "^0.3.17",
+    "node-sass": "^4.8.3",
     "prettier": "^1.11.1",
     "serve": "^6.5.3"
   }
