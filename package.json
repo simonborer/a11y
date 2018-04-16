@@ -7,7 +7,7 @@
     "build": "node ./scripts/build",
     "build:prod": "cross-env NODE_ENV=production node ./scripts/build",
     "serve": "live-server",
-    "deploy": "build:prod && sudo git push origin master"
+    "deploy": "npm run build:prod && sudo git push origin master"
   },
   "keywords": [],
   "author": "",
