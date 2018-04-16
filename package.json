@@ -6,7 +6,8 @@
   "scripts": {
     "build": "node ./scripts/build",
     "build:prod": "cross-env NODE_ENV=production node ./scripts/build",
-    "serve": "serve ./public"
+    "serve": "live-server",
+    "deploy": "build:prod && sudo git push origin master"
   },
   "keywords": [],
   "author": "",

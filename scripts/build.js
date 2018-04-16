@@ -17,7 +17,7 @@ const distPath = config.build.outputPath;
 fse.emptyDirSync(distPath);
 
 // copy assets folder
-fse.copy(`${srcPath}/resources`, `${distPath}/resources`);
+fse.copy(`${srcPath}/assets`, `${distPath}/assets`);
 
 // read pages
 globP('**/*.@(md|ejs|html)', { cwd: `${srcPath}/pages` })
