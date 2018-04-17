@@ -2599,3 +2599,27 @@ a.thumbnail image { -webkit-box-shadow: none; box-shadow: none; }
 .short-delay { -webkit-animation-delay: 300ms !important; animation-delay: 300ms !important; }
 
 .long-delay { -webkit-animation-delay: 700ms !important; animation-delay: 700ms !important; }
+
+body { color: #333; }
+
+.button { font-weight: bold; }
+
+.button-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.button--home { position: fixed; background: white; color: #333; }
+
+.button--home:focus { background: #cacaca; color: #333; }
+
+.button--home:hover { background: #cacaca; color: #333; }
+
+.page__title { color: white; background: #333; font-weight: 900; padding: 4rem 2rem; font-size: 7vw; text-align: center; line-height: 7vw; text-transform: uppercase; }
+
+.weeks-table { margin-top: 2rem; text-align: center; }
+
+.weeks-table > tbody { border: 0 solid transparent; }
+
+.weeks-table > tbody td { padding-top: 2rem; padding-bottom: 2rem; }
+
+.weeks-table .button-group { margin-bottom: 0; }
+
+.weeks-table th[rowspan='2'] { font-size: 2rem; -webkit-transform: translateY(-0.5rem); -ms-transform: translateY(-0.5rem); transform: translateY(-0.5rem); }

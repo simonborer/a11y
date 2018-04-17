@@ -1,1 +1,61 @@
 @import './foundation/scss/app';
+
+$grey: #333;
+$light-grey: #cacaca;
+
+body {
+	color: $grey;
+}
+
+.button {
+    font-weight: bold;
+    &-group {
+        display: flex;
+        justify-content: center;
+    }
+    &--home {
+        position: fixed;
+        background: white;
+        color: $grey;
+        &:focus {
+            background: $light-grey;
+            color: $grey;
+        }
+        &:hover {
+            background: $light-grey;
+            color: $grey;
+        }
+    }
+}
+
+.page {
+    &__title {
+        color: white;
+        background: $grey;
+        font-weight: 900;
+        padding: 4rem 2rem;
+        font-size: 7vw;
+        text-align: center;
+        line-height: 7vw;
+        text-transform: uppercase;
+    }
+}
+
+.weeks-table {
+    margin-top: 2rem;
+    text-align: center;
+    &>tbody {
+        border: 0 solid transparent;
+        & td {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+    & .button-group {
+        margin-bottom: 0;
+    }
+    & th[rowspan='2'] {
+    	font-size: 2rem;
+        transform: translateY(-.5rem);
+    }
+}
