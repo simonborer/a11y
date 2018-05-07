@@ -1,9 +1,30 @@
----
-title: The first week
-layout: default
-hasSlides: true
----
-<section class="slide-only">
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>The first week | Accessibility + Usability</title>
+<meta name="description" content="Posts and slides"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
+  <link rel="stylesheet" href="/a11y/assets/css/solarized.css">
+  <style>
+  	.slides > :not(section) {
+  		display: none;
+  	}
+  	li > ol {
+		list-style-type: lower-alpha; 
+  	}
+  </style>
+</head>
+<body>
+  
+	<div class="reveal">
+		<div class="slides">
+	      	<section>
+	      		<h1>The first week</h1>
+	      	</section>
+			<section class="slide-only">
 	<h2>Here's what we're going today</h2>
 	<ol>
 		<li class="fragment">Going over the syllabus</li>
@@ -158,3 +179,13 @@ Review https://www.nngroup.com/articles/task-scenarios-usability-testing/ and Br
 
 Alright, now - basically we just do this: https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML BUT HOW ABOUT WE ACTUALLY LISTEN TO THE SHITTY VERSION THROUGH A SCREEN READER
 </section>
+	
+		</div>
+	</div>
+
+<script src="/a11y/assets/javascript/reveal.js"></script>
+<script>
+      Reveal.initialize();
+    </script>
+</body>
+</html>

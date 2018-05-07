@@ -2612,7 +2612,9 @@ body { color: #333; }
 
 .button--home:hover { background: #cacaca; color: #333; }
 
-.page__title { color: white; background: #333; font-weight: 900; padding: 4rem 2rem; font-size: 7vw; text-align: center; line-height: 7vw; text-transform: uppercase; }
+.page__title { color: white; background: #333; font-weight: 900; padding-top: 6.5rem; padding-left: 2rem; padding-right: 2rem; padding-bottom: 4rem; font-size: 7vw; text-align: center; line-height: 7vw; text-transform: uppercase; }
+
+.home .page__title { padding-top: 4rem; }
 
 .weeks-table { margin-top: 2rem; text-align: center; }
 
@@ -2623,3 +2625,7 @@ body { color: #333; }
 .weeks-table .button-group { margin-bottom: 0; }
 
 .weeks-table th[rowspan='2'] { font-size: 2rem; -webkit-transform: translateY(-0.5rem); -ms-transform: translateY(-0.5rem); transform: translateY(-0.5rem); }
+
+.slides .post-only { display: none; }
+
+.post .slide-only { display: none; }

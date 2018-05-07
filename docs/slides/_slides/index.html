@@ -6,19 +6,34 @@
 <title>Slide Page | Accessibility + Usability</title>
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/docs/assets/css/reveal.css">
-  <link rel="stylesheet" href="/docs/assets/css/solarized.css">
+  <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
+  <link rel="stylesheet" href="/a11y/assets/css/solarized.css">
+  <style>
+  	.slides > :not(section) {
+  		display: none;
+  	}
+  	li > ol {
+		list-style-type: lower-alpha; 
+  	}
+  </style>
 </head>
 <body>
-
-  <div class="reveal">
+  
+	<div class="reveal">
+		<div class="slides">
+	      	<section>
+	      		<h1>Slide Page</h1>
+	      	</section>
+			<div class="reveal">
 			<div class="slides">
 				<section>Slide 1</section>
 				<section>Slide 2</section>
 			</div>
+		</div>	
 		</div>
+	</div>
 
-<script src="/docs/assets/javascript/reveal.js"></script>
+<script src="/a11y/assets/javascript/reveal.js"></script>
 <script>
       Reveal.initialize();
     </script>

@@ -4,16 +4,14 @@
 	  <%- include('../partials/head') %>
 	  <link rel="stylesheet" href="<%= site.basePath %>/assets/css/styles.css">
 	</head>
-	<body>
-		<section class="page">
+	<body class="post">
+		<section class="page<% if (page.isHome === true) { %> home<% } %>">
 			<% const title = 'Accessibility<br>+ Usability'; %>
 			<% if (page.isHome !== true) { %>
 				<nav><a href="/docs" class="button large button--home">Home</a></nav>
 			<% } %>
 		  <h1 class="page__title"><% if (page.title) { %><%- page.title %><% } else { %><%- title %><% } %></h1>
 		</section>
-		<section class="main-content">
-		  <%- body %>
-		</section>
+		<%- body %>
 	</body>
 </html>

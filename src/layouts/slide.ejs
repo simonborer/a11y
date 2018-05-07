@@ -4,16 +4,23 @@
   <%- include('../partials/head') %>
   <link rel="stylesheet" href="<%= site.basePath %>/assets/css/reveal.css">
   <link rel="stylesheet" href="<%= site.basePath %>/assets/css/solarized.css">
+  <style>
+  	.slides > :not(section) {
+  		display: none;
+  	}
+  	li > ol {
+		list-style-type: lower-alpha; 
+  	}
+  </style>
 </head>
 <body>
   
 	<div class="reveal">
 		<div class="slides">
-      <section><h1><%= page.title %></h1></section>
-				<% const slides = page.slides %>
-				<% slides.forEach(slide => { %>
-					<section><%- slide %></section>
-				<% }) %>
+	      	<section>
+	      		<h1><%= page.title %></h1>
+	      	</section>
+			<%- body %>	
 		</div>
 	</div>
 
