@@ -2134,7 +2134,7 @@ thead th, thead td, tfoot th, tfoot td { padding: 0.5rem 0.625rem 0.625rem; font
 
 tbody th, tbody td { padding: 0.5rem 0.625rem 0.625rem; }
 
-tbody tr:nth-child(even) { border-bottom: 0; background-color: #f1f1f1; }
+tbody tr:nth-child(odd) { background-color: #f1f1f1; }
 
 table.unstriped tbody { background-color: #fefefe; }
 
@@ -2153,7 +2153,7 @@ table.hover tfoot tr:hover { background-color: #ececec; }
 
 table.hover tbody tr:hover { background-color: #f9f9f9; }
 
-table.hover:not(.unstriped) tr:nth-of-type(even):hover { background-color: #ececec; }
+table.hover:not(.unstriped) tr:nth-of-type(odd):hover { background-color: #ececec; }
 
 .table-scroll { overflow-x: auto; }
 
@@ -2616,16 +2616,22 @@ body { color: #333; }
 
 .home .page__title { padding-top: 4rem; }
 
-.weeks-table { margin-top: 2rem; text-align: center; }
+.weeks-table { margin-top: 2rem; }
 
 .weeks-table > tbody { border: 0 solid transparent; }
 
-.weeks-table > tbody td { padding-top: 2rem; padding-bottom: 2rem; }
+.weeks-table > tbody td { padding-top: 1rem; padding-bottom: 1rem; }
 
 .weeks-table .button-group { margin-bottom: 0; }
 
 .weeks-table th[rowspan='2'] { font-size: 2rem; -webkit-transform: translateY(-0.5rem); -ms-transform: translateY(-0.5rem); transform: translateY(-0.5rem); }
 
+.weeks-table tr:nth-of-type(odd) { padding: 2rem; }
+
+.weeks-table tr:nth-of-type(even) { margin-bottom: 2rem; padding-bottom: 2rem; }
+
 .slides .post-only { display: none; }
 
 .post .slide-only { display: none; }
+
+.post .grid-container:nth-of-type(1) { margin-top: 4rem; }

@@ -4,11 +4,18 @@ isHome: true
 <div class="grid-container">
   <div class="grid-x">
     <div class="cell small-10 small-offset-1">
-      <table class="stack unstriped weeks-table">
+      <table class="stack weeks-table">
         <% site.weeks.forEach((week, index) => { %>
           <tr>
-            <th rowspan="2">Week <%- index %></th>
-            <td colspan="2"><%- week.description %></td>
+            <th colspan="2">
+              <h2>Week <%- index %></h2>
+              <p><%- week.description %></p>
+              <% if (week.reading) { %>
+              <strong>Reading: </strong><a href="<%- week.reading.link %>" target="_blank"><%= week.reading.title %></a>
+              <% } else { %>
+              <strong>Reading will be posted on the week of class.</strong>
+              <% } %>
+            </th>
           </tr>
           <tr>
             <td>

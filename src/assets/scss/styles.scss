@@ -4,7 +4,7 @@ $grey: #333;
 $light-grey: #cacaca;
 
 body {
-	color: $grey;
+    color: $grey;
 }
 
 .button {
@@ -49,20 +49,26 @@ body {
 
 .weeks-table {
     margin-top: 2rem;
-    text-align: center;
     &>tbody {
         border: 0 solid transparent;
         & td {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
     }
     & .button-group {
         margin-bottom: 0;
     }
     & th[rowspan='2'] {
-    	font-size: 2rem;
+        font-size: 2rem;
         transform: translateY(-.5rem);
+    }
+    & tr:nth-of-type(odd) {
+        padding: 2rem;
+    }
+    & tr:nth-of-type(even) {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 }
 
