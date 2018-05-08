@@ -1,13 +1,20 @@
 [
 {
     "description": "This week we cover broad term definitions for accessibility and usability, along with basic theory and practice.<br><br>For praxis, we do a heuristic evaluation, brainstorm task scenarios, and basic static HTML accessibility.",
-    "reading": {
-      "title": "On Average by Avery Trufelman",
-      "link": "https://99percentinvisible.org/episode/on-average/"
-    }
+    "reading":
+    {
+        "title": "On Average by Avery Trufelman",
+        "link": "https://99percentinvisible.org/episode/on-average/"
+    },
+    "showSlides": true
 },
 {
-    "description": "In our second week, we examine the origins of the open web, disability rights, and subjectivity in field practice. We will also expand on types of usability testing, including analytics, surveys, individual, focus groups, contextual, first click, eye-tracking, and SUS.<br><br>Praxis will focus on accessibility auditing, and breaking down Steve Krug's test script."
+    "description": "In our second week, we begin our discussion by considering a variety of definitions for 'end user'. This leads us to consider usability as a concept in code re-use (including for programmers with disabilities) and SEO. We examine the origins of the open web, disability rights, and subjectivity in field practice. We will also expand on types of usability testing, including analytics, surveys, individual, focus groups, contextual, first click, eye-tracking, and SUS.<br><br>Praxis will focus on accessibility auditing, and breaking down Steve Krug's test script.",
+    "reading":
+    {
+        "title": "Stack Overflow: How can you program if you're blind",
+        "link": "https://stackoverflow.com/questions/118984/how-can-you-program-if-youre-blind"
+    }
 },
 {
     "description": "For our third week, we will dive into digital accessibility techniques, including linting, semantics, accessible content, history management, & controlling focus. Usability topics will include personas, and task analysis.<br><br>Our praxis will look at WAI-ARIA in action, and a working session for preparing scenarios."

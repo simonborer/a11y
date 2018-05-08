@@ -26,6 +26,9 @@ body {
             color: $grey;
         }
     }
+    &.disabled{
+        pointer-events: none;
+    }
 }
 
 .page {
@@ -53,15 +56,20 @@ body {
         border: 0 solid transparent;
         & td {
             padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding-bottom: 4rem;
         }
     }
     & .button-group {
         margin-bottom: 0;
     }
-    & th[rowspan='2'] {
-        font-size: 2rem;
-        transform: translateY(-.5rem);
+    & th[colspan='2'] {
+        padding: 2rem;
+        & p {
+            line-height: 1.4;
+            font-weight: 500;
+            margin: 2rem;
+            text-align: left;
+        }
     }
     & tr:nth-of-type(odd) {
         padding: 2rem;

@@ -13,15 +13,15 @@ isHome: true
               <% if (week.reading) { %>
               <strong>Reading: </strong><a href="<%- week.reading.link %>" target="_blank"><%= week.reading.title %></a>
               <% } else { %>
-              <strong>Reading will be posted on the week of class.</strong>
+              <em>Readings and notes will be posted on the week of class.</em>
               <% } %>
             </th>
           </tr>
           <tr>
             <td>
               <div class="button-group">
-                <a class="button" href="./notes/week-<%- index %>">Notes <span class="show-for-sr">for week <%- index %></span></a>
-                <a class="button" href="./slides/notes/week-<%- index %>">Slides <span class="show-for-sr">for week <%- index %></span></a>
+                <a class="button<% if (week.showSlides === true) { %><% } else { %> disabled<% } %>" href="./notes/week-<%- index %>"<% if (week.showSlides === true) { %><% } else { %> aria-disabled<% } %>>Notes <span class="show-for-sr">for week <%- index %></span></a>
+                <a class="button<% if (week.showSlides === true) { %><% } else { %> disabled<% } %>" href="./slides/notes/week-<%- index %>"<% if (week.showSlides === true) { %><% } else { %> aria-disabled<% } %>>Slides <span class="show-for-sr">for week <%- index %></span></a>
               </div>
             </td>
           </tr>
