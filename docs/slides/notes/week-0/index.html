@@ -6,15 +6,18 @@
 <title>The first week | Accessibility + Usability</title>
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/docs/assets/css/reveal.css">
-  <link rel="stylesheet" href="/docs/assets/css/solarized.css">
+  <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
+  <link rel="stylesheet" href="/a11y/assets/css/solarized.css">
   <style>
   	.slides > :not(section) {
   		display: none;
   	}
   	li > ol {
-		list-style-type: lower-alpha; 
+		  list-style-type: lower-alpha; 
   	}
+    .post-only {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -45,12 +48,12 @@
 </section>
 <section class="slide-only">
     <h2>Syllabus</h2>
-    <a href="/docs/assets/documents/http5301-accessibility-and-usability-syllabus.pdf" target="_blank" class="button primary">Let's take a look at the syllabus =></a>
+    <a href="/a11y/assets/documents/http5301-accessibility-and-usability-syllabus.pdf" target="_blank" class="button primary">Let's take a look at the syllabus =></a>
 </section>
 <div class="grid-container">
     <div class="grid-x">
         <div class="cell text-center">
-            <a class="button primary" href="/docs/assets/documents/http5301-accessibility-and-usability-syllabus.pdf" target="_blank">Download the syllabus</a>
+            <a class="button primary" href="/a11y/assets/documents/http5301-accessibility-and-usability-syllabus.pdf" target="_blank">Download the syllabus</a>
             <hr>
         </div>
     </div>
@@ -60,7 +63,9 @@
             <p>What better place to start in any discipline than knowing the jargon. It makes googling your problems so much easier! Let's jump into accessibility and usability by going over some of the common terms for the fields' general concepts.</p>
         </div>
     </div>
+</div>
 	<section>
+		<div class="grid-container">
 	    <div class="grid-x">
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
 	            <h3>In this lesson, we'll...</h3>
@@ -72,8 +77,9 @@
 	            </ol>
 	        </div>
 	    </div>
+	</div>
 	</section>
-	<section id="terms">
+	<div id="terms" class="post-only">
 	    <div class="grid-x">
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
 	            <h3>Here are the terms we're going to define:</h3>
@@ -98,21 +104,31 @@
 	            </ol>
 	        </div>
 	    </div>
-	</section>
+	</div>
 	<section id="lowercase">
-	    <div class="grid-x">
+	    <div class="grid-container"><div class="grid-x">
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
-	        	<h3>accessibility</h3>
-	            <p>Lowercase 'a'. Accessibility as a broad term means recognizing what kind of barriers people might have to using your product or service and doing what you can to remove those barriers where possible, or, if it's not possible, providing equivalent alternatives.</p>
-	            <p>I want to emphasize that accessibility is not something that you should expect to 'finish'. It's not that kind of thing. It is a way of thinking, it is a set of questions you should always be asking. There are 7 billion people out there, it is not possible to make something perfectly accessible. That's not your responsibility. What _is_ your responsibility, I think, is to always look for opportunities to make things better, to be humble and recognize that people might have barriers that you've never thought of, and to be open to criticism and willing to take that as an opportunity to improve. That's not an easy thing to do - to accept that the things you make will always be imperfect, and that you won't always have the resources to do right by everyone. But try your best, and, odds are, this means you are a good person.</p>
+	        	<h3>accessibility (the idea)</h3>
+	            <p class="post-only">Lowercase 'a'. Accessibility as a broad term means recognizing what kind of barriers people might have to using your product or service and doing what you can to remove those barriers where possible, or, if it's not possible, providing equivalent alternatives.</p>
+	            <p class="post-only">I want to emphasize that accessibility is not something that you should expect to 'finish'. It's not that kind of thing. It is a way of thinking, it is a set of questions you should always be asking. There are 7 billion people out there, it is not possible to make something perfectly accessible. That's not your responsibility. What <em>is</em> your responsibility, I think, is to always look for opportunities to make things better, to be humble and recognize that people might have barriers that you've never thought of, and to be open to criticism and willing to take that as an opportunity to improve. That's not an easy thing to do - to accept that the things you make will always be imperfect, and that you won't always have the resources to do right by everyone. But try your best, and, odds are, this means you are a good person.</p>
+	            <ul class="slide-only">
+	            	<li class="fragment">What kind of barriers does your product or service have?</li>
+	            	<li class="fragment">Can you remove them?</li>
+	            	<li class="fragment">Failing that, can you provide ways around them?</li>
+	            </ul>
 	        </div>
 	    </div>
 	</section>
 	<section id="uppercase">
 	    <div class="grid-x">
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
-	        	<h3>Accessibility</h3>
-	            <p>...with a capital 'A' takes all of the guesswork out of it. Capital A accessibility means complying with the legal guidelines set out by the goverment for making your product or service usable by people with broadly defined physical challenges. So, we often talk about visual impairments, because we're working in a primarily visual medium. Hopefully your website doesn't have a lot of audio cues, but it's common to work with video that has an audio component, so we also talk about people with hearing issues. And, of course, our products and services generally have some kind of physical interface, so we talk about mobility issues. These are the big three categories of barrier that are addressed by capital 'A' accessibility.</p>
+	        	<h3>Accessibility (the law)</h3>
+	            <p class="post-only">...with a capital 'A' takes all of the guesswork out of it. Capital A accessibility means complying with the legal guidelines set out by the goverment for making your product or service usable by people with broadly defined physical challenges. So, we often talk about visual impairments, because we're working in a primarily visual medium. Hopefully your website doesn't have a lot of audio cues, but it's common to work with video that has an audio component, so we also talk about people with hearing issues. And, of course, our products and services generally have some kind of physical interface, so we talk about mobility issues. These are the big three categories of barrier that are addressed by capital 'A' accessibility.</p>
+	            <ul class="slide-only">
+	            	<li class="fragment">This is the law.</li>
+	            	<li class="fragment">(This is also what gets you hired!)</li>
+	            	<li class="fragment">Primarily addresses visual, hearing and mobility impairments.</li>
+	            </ul>
 	         </div>
 		</div>
 	</section>
@@ -122,13 +138,14 @@
 	        	<h3>AODA</h3>
 	            <p>These guidelines are codified in the AODA (Access for Ontarians with Disabilities Act) specs.</p>
 	            <p>Link: <a href="https://www.ontario.ca/laws/regulation/110191#BK14">https://www.ontario.ca/laws/regulation/110191#BK14</a></p>
-	            <blockquote>(4) Designated public sector organizations and large organizations for their internet websites shall meet the requirements of this section 
-		
-				2. By January 1, 2021, all internet websites and web content must conform with WCAG 2.0 Level AA, other than,
-		
-					i. success criteria 1.2.4 Captions (Live), and
-		
-					ii. success criteria 1.2.5 Audio Descriptions (Pre-recorded).  O. Reg. 191/11, s. 14 (4).</blockquote>
+	            <blockquote>
+(4) Designated public sector organizations and large organizations for their internet websites shall meet the requirements of this section  <br><br>
+	            		
+    2. By January 1, 2021, all internet websites and web content must conform with WCAG 2.0 Level AA, other than, <br><br>
+	            		
+        i. success criteria 1.2.4 Captions (Live), and <br><br>
+	            		
+        ii. success criteria 1.2.5 Audio Descriptions (Pre-recorded).  O. Reg. 191/11, s. 14 (4).</blockquote>
 	        </div>
 	    </div>
 	</section>
@@ -171,7 +188,13 @@
 	            <p class="fragment" id="ux"><strong>User experience</strong> is how people felt about their experience of using the product. </p>
 	            <p class="fragment" id="cx"><strong>Customer experience</strong> is how people felt about the company that the product represents.</p>
 	            <p class="fragment" id="ui">The <strong>user interface</strong> is the mechanism by which the person uses the product.</p>
-	            <p class="fragment" id="hci"><strong>Human-Computer Interaction</strong> is the study of the usability of user interface(s). It is an old (40+ years!), and primarily academic discipline that talks about cognitive science, ergonomics, and all kinds of wonderful stuff.</p>
+	        </div>
+	    </div>
+	</section>
+	<section>
+	    <div class="grid-x">
+	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
+	            <p id="hci"><strong>Human-Computer Interaction</strong> is the study of the usability of user interface(s). It is an old (40+ years!), and primarily academic discipline that talks about cognitive science, ergonomics, and all kinds of wonderful stuff.</p>
 	            <p class="fragment" id="ixd"><strong>Interaction design</strong> is the functional design of the interface, while UI design is the appearance of the interface. We're really starting to split hairs here. If you're a UI designer, this is not a "not my job" type of thing.</p>
 	            <p class="fragment" id="hcd"><strong>Human-centred design</strong> and <strong>user-centred design</strong> are often used interchangeably, BUT, (and, again, we're splitting hairs), human centred design is a design process that takes into consideration the end user (i.e. humanity) at each stage of design, whereas UCD takes into consideration A SPECIFIC AUDIENCE.</p>
 	        </div>
@@ -182,15 +205,15 @@
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
 	            <p>So, if we were to apply these terms to, and I'm dating myself here, an ipod...
 	            	<ul>
-	            		<li>Usability would measure how many steps it takes before you can listen to a song.</li>
-	            		<li>User experience is whether people like using the ipod.</li> 
-	            		<li>Customer experience is how people feel about Apple after using an ipod.</li> 
-	            		<li>User interface is both the hardware and software that provides the user with input or output (as opposed to, say, the internal database retrieval software, or internal hardware).</li> 
-	            		<li>HCI would study the totality of the interactions, including the charging port.</li> 
-	            		<li>Interaction design would determine how the wheel affects the display.</li> 
-	            		<li>UI design would determine what the wheel looks like, and what font the display uses.</li> 
-	            		<li>Human centred design would mean that, from the beginning of the design process, someone was thinking about what it would be like to hold in your hand.</li> 
-	            		<li>User-centred design would mean that, from the beginning of the design process, someone was thinking about the hands of people who would spend $399 on a portable music player.</li>
+	            		<li>Usability === steps to listen to a song.</li>
+	            		<li>UX === people like using the ipod.</li> 
+	            		<li>CX === people like Apple.</li> 
+	            		<li>UI is both the hardware and software<span class="post-only"> that provides the user with input or output (as opposed to, say, the internal database retrieval software, or internal hardware)</span>.</li> 
+	            		<li>HCI studies the totality of the interactions, including the charging port.</li> 
+	            		<li>IxD === how the wheel affects the display.</li> 
+	            		<li>UI design === what the wheel looks like, what font the display uses.</li> 
+	            		<li>HCD means<span class="post-only">, from the beginning of the design process,</span> someone was thinking about what it would be like to hold in your hand.</li> 
+	            		<li>UCD means<span class="post-only">, from the beginning of the design process,</span> someone was thinking about the hands of people who would spend $399 on a portable music player.</li>
 	            	</ul>
 	            </p>
 	        </div>
@@ -218,7 +241,12 @@
 				<h3>Personas</h3>
 				<p>Personas are a tool for creating a design. A persona is a fake person you use to represent a major user group for your product. Let's say you're a library, and you're creating a form to get people to sign up for an online account. You would create personas based on your current users, and any group that you want to target as a user (maybe you've got an ad campaign to drive new users to the website, for example).</p> 
 				<p>Based on the information you have, you might create personas for an elderly person, a parent with children, and a student. </p>
-
+	        </div>
+	    </div>
+	</section>
+	<section>
+	    <div class="grid-x">
+	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
 				<blockquote>
 					<p>Personas generally include the following key pieces of information:</p> 
 					<ul>
@@ -231,19 +259,27 @@
 						<li>A quote that sums up what matters most to the persona as it relates to your site </li>
 						<li>Casual pictures representing that user group</li>
 					</ul> 
+					<br><br>
 					<cite><a href="https://www.usability.gov/how-to-and-tools/methods/personas.html" target="_blank">https://www.usability.gov/how-to-and-tools/methods/personas.html</a></cite>
 				</blockquote>  
+	        </div>
+	    </div>
+	</section>
+	<section>
+	    <div class="grid-x">
+	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
 				<p>The purpose of making up a fake person, rather than simply pointing to your analytics data, is to facilitate design discussions (particularly with people who don't deal with analytics on the regular).</p>
 	        </div>
 	    </div>
 	</section>
 	<section id="scenarios">
-	    <div class="grid-x">
+	    <div class="grid-container">
+	    	<div class="grid-x">
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
 				<h3>Scenarios</h3>
 				<p>Now that you've got an idea of who is using your site, you can go a step further and write down WHAT they're using the site for - these are called Scenarios. A Scenario is a set of tasks required to accomplish a user's goal.</p> 
-				<p>Further reading: <a href="https://www.nngroup.com/articles/task-scenarios-usability-testing/" target="_blank">https://www.nngroup.com/articles/task-scenarios-usability-testing/</a></p>
-				<p>So, with your personas to guide you, you've developed a prototype application. Time to see if your fake people translate to real people - it's time for usability testing! In usability tests, you take your scenarios, and you ask people to try and accomplish the goal of that scenario. Then, you spy on them like a total creep! But it's fine because you have their consent and you're probably giving them $5 and some donuts. When you run your scenario, there are a number of ways that you can get data from the test.</p>
+				<p class="post-only">Further reading: <a href="https://www.nngroup.com/articles/task-scenarios-usability-testing/" target="_blank">https://www.nngroup.com/articles/task-scenarios-usability-testing/</a></p>
+				<p class="post-only">So, with your personas to guide you, you've developed a prototype application. Time to see if your fake people translate to real people - it's time for usability testing! In usability tests, you take your scenarios, and you ask people to try and accomplish the goal of that scenario. Then, you spy on them like a total creep! But it's fine because you have their consent and you're probably giving them $5 and some donuts. When you run your scenario, there are a number of ways that you can get data from the test.</p>
 	        </div>
 	    </div>
 	</section>
@@ -254,8 +290,22 @@
 				<p>Before we get into methods, let's define the two categories of data that we report. Quantitative and Qualitative, aka quant and qual.</p> 
 				<p><strong>Quantitative data</strong> is, naturally, data you can quantify. How long does it take to complete the task? How many errors does a user generate, etc. </p>
 				<p><strong>Qualitative data</strong> is observational, and, generally, subjective. Is the user struggling to find a UI element? Is there a part of the interface that they seem to enjoy fiddling with? </p>
-				<p>Quantitative research requires different conditions than qual, for a few reasons. First of all, to get good quantitative data, you need a large data set. You'll be running a lot of people through a well-defined and tightly controlled task set. Qualitative data, on the other hand, is gathered in a much looser and more adaptable way. Quantitative research is less common, but provides a business with some all-important numbers. Qualitative research is more subjective, as it's meant to be exploratory. Of course, when you're dealing with an organization, they'll still want numbers to supplement all your lovely written summaries and reports.</p>
-				<p>That's where PURE comes in - Pragmatic Usability Rating by Experts. This is just a rubric for putting your subjective findings into, so that your hunches and intuition get turned into numbers. You split your scenario into tasks, and your tasks into steps, and give each step a score out of three for how difficult the user found the task, 1 being easy, 3 being difficult. Image: https://media.nngroup.com/media/editor/2017/04/11/pure-product.png Now, there's a whole variety of types of user tests you can do, and if you're a usability expert or UX researcher, part of your job is having your own catalog of tests and deciding which ones are appropriate. </p>
+	        </div>
+	    </div>
+	</section>
+	<section>
+	    <div class="grid-x">
+	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
+				<p>Quantitative research requires different conditions than qual, for a few reasons. First of all, <strong>to get good quantitative data, you need a large data set</strong>. You'll be running a lot of people through a well-defined and tightly controlled task set. Qualitative data, on the other hand, is gathered in a much looser and more adaptable way. Quantitative research is less common, but provides a business with some all-important numbers. <strong>Qualitative research is more subjective, as it's meant to be exploratory</strong>. Of course, when you're dealing with an organization, they'll still want numbers to supplement all your lovely written summaries and reports.</p>
+	        </div>
+	    </div>
+	</section>
+	<section id="qualQuant">
+	    <div class="grid-x">
+	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
+				<p>That's where PURE comes in - <strong>Pragmatic Usability Rating by Experts</strong>. This is just a rubric for putting your subjective findings into, so that your hunches and intuition get turned into numbers. You split your scenario into tasks, and your tasks into steps, and give each step a score out of three for how difficult the user found the task, 1 being easy, 3 being difficult.</p>
+				<img src="https://media.nngroup.com/media/editor/2017/04/11/pure-product.png" alt="Examples of PURE evaluations.">
+				 <p>Now, there's a whole variety of types of user tests you can do, and if you're a usability expert or UX researcher, part of your job is having your own catalog of tests and deciding which ones are appropriate. </p>
 	        </div>
 	    </div>
 	</section>
@@ -284,15 +334,33 @@
 	<section id="page">
 	    <div class="grid-x">
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
-				Alright, now - basically we just do this: <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML</a> BUT HOW ABOUT WE ACTUALLY LISTEN TO THE SHITTY VERSION THROUGH A SCREEN READER
+				<h3>Accessibility basics</h3>
+				<p>See also: <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML</a></p>
+				<ul>
+					<li class="fragment">Semantics: Can you use a <code>button</code>?</li>
+					<li class="fragment">Content: Can the <code>button</code> describe its function?</li>
+					<li class="fragment">Focus: If it's not a button, can you trigger it anyway?</li>
+					<li class="fragment">Tables: <code>scope</code> and <code>colspan</code></li>
+					<li class="fragment">Inputs: <code>label</code> for id.</li>
+					<li class="fragment">Images: <code>alt</code> text</li>
+					<li class="fragment">Source order: Javascript, but also CSS (i.e. <code>flex-order</code>)</li>
+				</ul>
 	        </div>
 	    </div>
 	</section>
+	<section class="slide-only">
+	    <div class="grid-x">
+	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
+				<h3>Thank you!</h3>
+	        </div>
+	    </div>
+	</section>
+
 </div>	
 		</div>
 	</div>
 
-<script src="/docs/assets/javascript/reveal.js"></script>
+<script src="/a11y/assets/javascript/reveal.js"></script>
 <script>
       Reveal.initialize();
     </script>
