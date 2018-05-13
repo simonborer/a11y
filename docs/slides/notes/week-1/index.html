@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-	  <meta charset="UTF-8">
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>The first week | Accessibility + Usability</title>
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="/docs/assets/css/styles.css">
-	</head>
-	<body class="post">
-		<section class="page">
+  <link rel="stylesheet" href="/docs/assets/css/reveal.css">
+  <link rel="stylesheet" href="/docs/assets/css/solarized.css">
+  <style>
+  	.slides > :not(section) {
+  		display: none;
+  	}
+  	li > ol {
+		  list-style-type: lower-alpha; 
+  	}
+    .post-only {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  
+	<div class="reveal">
+		<div class="slides">
+	      	<section>
+	      		<h1>The first week</h1>
+	      	</section>
 			
-			
-				<nav><a href="/docs" class="button large button--home">Home</a></nav>
-			
-		  <h1 class="page__title">The first week</h1>
-		</section>
-		
 
 	<section class="slide-only">
     <h2>Here's what we're going today</h2>
@@ -78,6 +89,13 @@
         </div>
     </div>
 </section>
-<!-- https://www.usability.gov/how-to-and-tools/resources/templates/report-template-usability-test.html -->
-	</body>
+<!-- https://www.usability.gov/how-to-and-tools/resources/templates/report-template-usability-test.html -->	
+		</div>
+	</div>
+
+<script src="/docs/assets/javascript/reveal.js"></script>
+<script>
+      Reveal.initialize();
+    </script>
+</body>
 </html>

@@ -2606,7 +2606,9 @@ body { color: #333; }
 
 .button-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.button--home { position: fixed; background: white; color: #333; }
+.button--home { position: absolute; background: white; color: #333; }
+
+@media screen and (min-width: 40em) { .button--home { position: fixed; } }
 
 .button--home:focus { background: #cacaca; color: #333; }
 
@@ -2628,14 +2630,22 @@ body { color: #333; }
 
 .weeks-table th[colspan='2'] { padding: 2rem; }
 
-.weeks-table th[colspan='2'] p { line-height: 1.4; font-weight: 500; margin: 2rem; text-align: left; }
+.weeks-table th[colspan='2'] p { line-height: 1.4; font-weight: 500; text-align: left; }
 
-.weeks-table tr:nth-of-type(odd) { padding: 2rem; }
+@media screen and (min-width: 40em) { .weeks-table th[colspan='2'] p { margin: 2rem; } }
 
-.weeks-table tr:nth-of-type(even) { margin-bottom: 2rem; padding-bottom: 2rem; }
+@media screen and (min-width: 64em) { .weeks-table tr:nth-of-type(odd) { padding: 2rem; } }
 
 .slides .post-only { display: none; }
 
 .post .slide-only { display: none; }
 
-.post .grid-container:nth-of-type(1) { margin-top: 4rem; }
+.post > section:not(.page) { margin: 1rem 0; }
+
+@media screen and (max-width: 39.9375em) { .post > section:not(.page) { padding: 0 1rem; } }
+
+.post > div { margin: 1rem 0; }
+
+@media screen and (max-width: 39.9375em) { .post > div { padding: 0 1rem; } }
+
+img { margin: 1rem 0; }

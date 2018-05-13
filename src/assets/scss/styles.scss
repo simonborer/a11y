@@ -14,7 +14,10 @@ body {
         justify-content: center;
     }
     &--home {
-        position: fixed;
+        position: absolute;
+        @include breakpoint(medium up){
+            position: fixed;        
+        }
         background: white;
         color: $grey;
         &:focus {
@@ -67,16 +70,16 @@ body {
         & p {
             line-height: 1.4;
             font-weight: 500;
-            margin: 2rem;
             text-align: left;
+            @include breakpoint(medium up){
+                margin: 2rem;
+            }
         }
     }
     & tr:nth-of-type(odd) {
-        padding: 2rem;
-    }
-    & tr:nth-of-type(even) {
-        margin-bottom: 2rem;
-        padding-bottom: 2rem;
+        @include breakpoint(large up){
+            padding: 2rem;        
+        }
     }
 }
 
@@ -93,7 +96,20 @@ body {
 }
 
 .post {
-    & .grid-container:nth-of-type(1) {
-        margin-top: 4rem;
+    & > section:not(.page) {
+        margin: 1rem 0;
+        @include breakpoint(small down) {
+            padding: 0 1rem;
+        }
     }
+    & > div {
+        margin: 1rem 0;
+        @include breakpoint(small down) {
+            padding: 0 1rem;
+        }
+    }
+}
+
+img {
+    margin: 1rem 0;
 }

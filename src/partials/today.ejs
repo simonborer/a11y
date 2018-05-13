@@ -1,0 +1,29 @@
+<% if (page.today) { %>
+	<section class="slide-only">
+    <h2>Here's what we're going today</h2>
+	    <ol>
+	    	<% const today = page.today %>
+	        <% today.assorted.forEach(item => { %>
+	        	<li class="fragment"><%= item %></li>
+	        <% }) %>
+	        <% if (today.theory) { %>
+			<li class="fragment">Theory
+				<ol>
+					<% today.theory.forEach(item => { %>
+						<li class="fragment"><%= item %></li>
+					<% }) %>
+				</ol>
+			</li>
+	        <% } %>
+	       	<% if (today.praxis) { %>
+			<li class="fragment">Praxis
+				<ol>
+					<% today.praxis.forEach(item => { %>
+						<li class="fragment"><%= item %></li>
+					<% }) %>
+				</ol>
+			</li>
+	        <% } %>
+	    </ol>
+	</section>
+<% } %>

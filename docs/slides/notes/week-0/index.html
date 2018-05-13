@@ -6,8 +6,8 @@
 <title>The first week | Accessibility + Usability</title>
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
-  <link rel="stylesheet" href="/a11y/assets/css/solarized.css">
+  <link rel="stylesheet" href="/docs/assets/css/reveal.css">
+  <link rel="stylesheet" href="/docs/assets/css/solarized.css">
   <style>
   	.slides > :not(section) {
   		display: none;
@@ -48,12 +48,12 @@
 </section>
 <section class="slide-only">
     <h2>Syllabus</h2>
-    <a href="/a11y/assets/documents/http5301-accessibility-and-usability-syllabus.pdf" target="_blank" class="button primary">Let's take a look at the syllabus =></a>
+    <a href="/docs/assets/documents/http5301-accessibility-and-usability-syllabus.pdf" target="_blank" class="button primary">Let's take a look at the syllabus =></a>
 </section>
-<div class="grid-container">
+<div>
     <div class="grid-x">
         <div class="cell text-center">
-            <a class="button primary" href="/a11y/assets/documents/http5301-accessibility-and-usability-syllabus.pdf" target="_blank">Download the syllabus</a>
+            <a class="button primary" href="/docs/assets/documents/http5301-accessibility-and-usability-syllabus.pdf" target="_blank">Download the syllabus</a>
             <hr>
         </div>
     </div>
@@ -64,9 +64,8 @@
         </div>
     </div>
 </div>
-	<section>
-		<div class="grid-container">
-	    <div class="grid-x">
+<section>
+	<div class="grid-x">
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
 	            <h3>In this lesson, we'll...</h3>
 	            <ol>
@@ -76,13 +75,12 @@
 	                <li class="fragment"><a href="#page">Work through the basics of making a static html page accessible.</a></li>
 	            </ol>
 	        </div>
-	    </div>
 	</div>
-	</section>
-	<div id="terms" class="post-only">
-	    <div class="grid-x">
-	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
-	            <h3>Here are the terms we're going to define:</h3>
+</section>
+<div id="terms" class="post-only">
+    <div class="grid-x">
+        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
+            <h3>Here are the terms we're going to define:</h3>
 	            <ol>
 	                <li class="fragment"><a href="#lowercase">accessibility</a></li>
 	                <li class="fragment"><a href="#uppercase">Accessibility</a></li>
@@ -100,24 +98,23 @@
 	                <li class="fragment"><a href="#personas">personas</a></li>
 	                <li class="fragment"><a href="#scenarios">scenarios</a></li>
 	                <li class="fragment"><a href="#qualQuant">quantitative & qualitative data</a></li>
-	                
 	            </ol>
 	        </div>
 	    </div>
 	</div>
 	<section id="lowercase">
-	    <div class="grid-container"><div class="grid-x">
-	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
-	        	<h3>accessibility (the idea)</h3>
-	            <p class="post-only">Lowercase 'a'. Accessibility as a broad term means recognizing what kind of barriers people might have to using your product or service and doing what you can to remove those barriers where possible, or, if it's not possible, providing equivalent alternatives.</p>
-	            <p class="post-only">I want to emphasize that accessibility is not something that you should expect to 'finish'. It's not that kind of thing. It is a way of thinking, it is a set of questions you should always be asking. There are 7 billion people out there, it is not possible to make something perfectly accessible. That's not your responsibility. What <em>is</em> your responsibility, I think, is to always look for opportunities to make things better, to be humble and recognize that people might have barriers that you've never thought of, and to be open to criticism and willing to take that as an opportunity to improve. That's not an easy thing to do - to accept that the things you make will always be imperfect, and that you won't always have the resources to do right by everyone. But try your best, and, odds are, this means you are a good person.</p>
-	            <ul class="slide-only">
-	            	<li class="fragment">What kind of barriers does your product or service have?</li>
-	            	<li class="fragment">Can you remove them?</li>
-	            	<li class="fragment">Failing that, can you provide ways around them?</li>
-	            </ul>
-	        </div>
-	    </div>
+	    <div class="grid-x">
+			<div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
+		        	<h3>accessibility (the idea)</h3>
+		            <p class="post-only">Lowercase 'a'. Accessibility as a broad term means recognizing what kind of barriers people might have to using your product or service and doing what you can to remove those barriers where possible, or, if it's not possible, providing equivalent alternatives.</p>
+		            <p class="post-only">I want to emphasize that accessibility is not something that you should expect to 'finish'. It's not that kind of thing. It is a way of thinking, it is a set of questions you should always be asking. There are 7 billion people out there, it is not possible to make something perfectly accessible. That's not your responsibility. What <em>is</em> your responsibility, I think, is to always look for opportunities to make things better, to be humble and recognize that people might have barriers that you've never thought of, and to be open to criticism and willing to take that as an opportunity to improve. That's not an easy thing to do - to accept that the things you make will always be imperfect, and that you won't always have the resources to do right by everyone. But try your best, and, odds are, this means you are a good person.</p>
+		            <ul class="slide-only">
+		            	<li class="fragment">What kind of barriers does your product or service have?</li>
+		            	<li class="fragment">Can you remove them?</li>
+		            	<li class="fragment">Failing that, can you provide ways around them?</li>
+		            </ul>
+		    </div>
+		</div>
 	</section>
 	<section id="uppercase">
 	    <div class="grid-x">
@@ -273,8 +270,8 @@
 	    </div>
 	</section>
 	<section id="scenarios">
-	    <div class="grid-container">
-	    	<div class="grid-x">
+
+    	<div class="grid-x">
 	        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
 				<h3>Scenarios</h3>
 				<p>Now that you've got an idea of who is using your site, you can go a step further and write down WHAT they're using the site for - these are called Scenarios. A Scenario is a set of tasks required to accomplish a user's goal.</p> 
@@ -355,12 +352,11 @@
 	        </div>
 	    </div>
 	</section>
-
 </div>	
 		</div>
 	</div>
 
-<script src="/a11y/assets/javascript/reveal.js"></script>
+<script src="/docs/assets/javascript/reveal.js"></script>
 <script>
       Reveal.initialize();
     </script>
