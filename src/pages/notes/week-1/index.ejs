@@ -20,6 +20,11 @@ today:
 ---
 <% const part = '../../../partials/'; %>
 <%- include(`${part}today`) %>
+<%- include(`${part}section`, {
+  class: 'slide-only',
+  headline: 'Last Week',
+  list: ["Accessibility is a good idea, and also it's the law.", "Usability is not the same as a bunch of other stuff (but it's close)", "'Heuristic evaluation' is just a fancy way of saying 'checklist of good ideas'", "Personas and Scenarios are tools for usability design and evaluation", "2 kinds of data: quantitative and qualitative", "Basic accessibility is basic"]
+})%>
 <%#- include(`${part}section`, {
   id: 'identification',
   headline: 'headline',
