@@ -14,7 +14,8 @@
     {
         "title": "Stack Overflow: How can you program if you're blind",
         "link": "https://stackoverflow.com/questions/118984/how-can-you-program-if-youre-blind"
-    }
+    },
+    "showSlides": true
 },
 {
     "description": "For our third week, we will dive into digital accessibility techniques, including linting, semantics, accessible content, history management, & controlling focus. Usability topics will include personas, and task analysis.<br><br>Our praxis will look at WAI-ARIA in action, and a working session for preparing scenarios."
