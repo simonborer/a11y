@@ -20,6 +20,7 @@ today:
     - Write a commuter task analysis with a partner
 ---
 <% const part = '../../../partials/'; %>
+<% const basePath = site.basePath %>
 <%- include(`${part}today`) %>
 <%- include(`${part}section`, {
   id: false,
@@ -39,7 +40,7 @@ today:
   id: false,
   style: "slide-only",
   headline: 'Things that have come up',
-  body: ["<img src='/docs/assets/images/contrast-ratio.png' alt='Screenshot of the Chrome devtools contrast ratio report in the colour picker'>", "<code>*, *:before, *:after {outline: 1px solid red}</code>"],
+  body: [`<img src='${basePath}/assets/images/contrast-ratio.png' alt='Screenshot of the Chrome devtools contrast ratio report in the colour picker'>", "<code>*, *:before, *:after {outline: 1px solid red}</code>`],
   list: false
 }) %>
 <%- include(`${part}section`, {
