@@ -18,7 +18,13 @@
     "showSlides": true
 },
 {
-    "description": "For our third week, we will dive into digital accessibility techniques, including linting, semantics, accessible content, history management, & controlling focus. Usability topics will include personas, and task analysis.<br><br>Our praxis will look at WAI-ARIA in action, and a working session for preparing scenarios."
+    "description": "For our third week, we will dive into digital accessibility techniques, including linting, semantics, accessible content, and controlling focus. Usability topics will include personas, and task analysis.<br><br>Our praxis will look at WAI-ARIA in action, and a working session for preparing scenarios.",
+    "reading":
+    {
+        "title": "Dock Ellis & The LSD No-No by James Blagden",
+        "link": "https://www.youtube.com/watch?v=_vUhSYLRw14"
+    },
+    "showSlides": true
 },
 {
     "description": "Our fourth week will be a working session on your mid-term assignments. This assignment will be to create a set of task scenarios, which you will run in subsequent lab sessions."
@@ -27,7 +33,7 @@
     "description": "The fifth week will cover integrating techniques into client relationship/team workflow. This includes evangelism, automation, auditing, project requirements, securing buy-in, content strategy, information architecture, wireframing & prototyping, and data evaluation.<br><br>Our praxis will include using the web with JAWS, using the mobile web with VoiceOver/TalkBack, reading analytics reports, and managing study participants."
 },
 {
-    "description": "Our sixth week will be a time to review any theory that we determine requires revisiting, or extra material that the class has determined would be of interest. Your final assignments will be distributed this week. The assignment will be to summarize your test findings and present them to the class. Our praxis will focus on history API best practices for accessibility, being a good 'hall monitor', and on-the-fly documentation."
+    "description": "Our sixth week will cover linting, as well as being a time to review any theory that we determine requires revisiting, or extra material that the class has determined would be of interest. Your final assignments will be distributed this week. The assignment will be to summarize your test findings and present them to the class. Our praxis will focus on history API best practices for accessibility, being a good 'hall monitor', and on-the-fly documentation."
 },
 {
     "description": "In our seventh week, we will cover accessibility and state management in Vue and React, and creating and presenting usability reports."

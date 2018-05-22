@@ -2644,7 +2644,7 @@ body { color: #333; }
 
 @media screen and (max-width: 39.9375em) { .post > section:not(.page) { padding: 0 1rem; } }
 
-.post > div { margin: 1rem 0; }
+.post > div { margin-top: 1rem; margin-bottom: 1rem; }
 
 @media screen and (max-width: 39.9375em) { .post > div { padding: 0 1rem; } }
 
