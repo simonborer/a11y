@@ -21,8 +21,8 @@
     "description": "For our third week, we will dive into digital accessibility techniques, including linting, semantics, accessible content, and controlling focus. Usability topics will include personas, and task analysis.<br><br>Our praxis will look at WAI-ARIA in action, and a working session for preparing scenarios.",
     "reading":
     {
-        "title": "Dock Ellis & The LSD No-No by James Blagden",
-        "link": "https://www.youtube.com/watch?v=_vUhSYLRw14"
+        "title": "Why Vim?",
+        "link": "http://www.terminally-incoherent.com/blog/2012/03/21/why-vim/"
     },
     "showSlides": true
 },

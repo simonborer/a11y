@@ -24,14 +24,14 @@ today:
 <%- include(`${part}today`) %>
 <%- include(`${part}section`, {
   id: false,
-  style: false,
+  style: "slide-only",
   headline: 'Midterm Assignment',
   body: `See: <a href='${basePath}/assignments/midterm.html' target='_blank'>your midterm</a>.`,
   list: false
 }) %>
 <%- include(`${part}section`, {
   id: false,
-  style: false,
+  style: "slide-only",
   headline: 'OCAS is go',
   body: "We will be testing the application process at <a href='https://www.ontariocolleges.ca/en' target='_blank'>https://www.ontariocolleges.ca/en</a>. We will be doing this as part of our lab time. You can make it the subject of your midterm/final assignment <em>if you want</em>.",
   list: false
@@ -40,7 +40,14 @@ today:
   id: false,
   style: "slide-only",
   headline: 'Things that have come up',
-  body: [`<img src='${basePath}/assets/images/contrast-ratio.png' alt='Screenshot of the Chrome devtools contrast ratio report in the colour picker'>", "<code>*, *:before, *:after {outline: 1px solid red}</code>`],
+  body: [`<img src='${basePath}/assets/images/contrast-ratio.png' alt='Screenshot of the Chrome devtools contrast ratio report in the colour picker'>"`],
+  list: false
+}) %>
+<%- include(`${part}section`, {
+  id: false,
+  style: "slide-only",
+  headline: false,
+  body: [`<code>*, *:before, *:after {outline: 1px solid red}</code>`],
   list: false
 }) %>
 <%- include(`${part}section`, {
