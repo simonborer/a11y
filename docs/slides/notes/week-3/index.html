@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-	  <meta charset="UTF-8">
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>The fourth week | Accessibility + Usability</title>
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="/a11y/assets/css/styles.css">
-	</head>
-	<body class="post">
-		<section class="page">
+  <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
+  <link rel="stylesheet" href="/a11y/assets/css/solarized.css">
+  <style>
+  	.slides > :not(section) {
+  		display: none;
+  	}
+  	li > ol {
+		  list-style-type: lower-alpha; 
+  	}
+    .post-only {
+      display: none;
+    }
+    .reveal blockquote {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  
+	<div class="reveal">
+		<div class="slides">
+	      	<section>
+	      		<h1>The fourth week</h1>
+	      	</section>
 			
-			
-				<nav><a href="/a11y" class="button large button--home">Home</a></nav>
-			
-		  <h1 class="page__title">The fourth week</h1>
-		</section>
-		
 
 
 	<section class="slide-only">
@@ -266,6 +282,13 @@
         </div>
     </div>
 </section>
+	
+		</div>
+	</div>
 
-	</body>
+<script src="/a11y/assets/javascript/reveal.js"></script>
+<script>
+      Reveal.initialize();
+    </script>
+</body>
 </html>

@@ -27,7 +27,13 @@
     "showSlides": true
 },
 {
-    "description": "Our fourth week will be a working session on your mid-term assignments. This assignment will be to create a set of task scenarios, which you will run in subsequent lab sessions."
+    "description": "Our fourth week review materials from the previous class, which not everyone was able to attend. If anyone has any roadblocks regarding their test plan, this will be a time to address them. We will also be performing basic linting via HTMLLint and writing an accessible accordion.",
+    "reading":
+    {
+        "title": "The Curb Cut Effect",
+        "link": "https://ssir.org/articles/entry/the_curb_cut_effect"
+    },
+    "showSlides": true
 },
 {
     "description": "The fifth week will cover integrating techniques into client relationship/team workflow. This includes evangelism, automation, auditing, project requirements, securing buy-in, content strategy, information architecture, wireframing & prototyping, and data evaluation.<br><br>Our praxis will include using the web with JAWS, using the mobile web with VoiceOver/TalkBack, reading analytics reports, and managing study participants."
