@@ -7,7 +7,6 @@
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
-  <link rel="stylesheet" href="/a11y/assets/css/solarized.css">
   <style>
   	.slides > :not(section) {
   		display: none;
@@ -361,9 +360,16 @@
 		</div>
 	</div>
 
-<script src="/a11y/assets/javascript/reveal.js"></script>
-<script>
-      Reveal.initialize();
+  <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js"></script>
+  <script>
+      Reveal.initialize({
+          dependencies: [
+                { src: '/a11y/assets/javascript/plugin/reveal-a11y.js', async: true, condition: function() { 
+                  return !!document.body.classList; 
+                } 
+            }]
+      });
     </script>
 </body>
 </html>

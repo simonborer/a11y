@@ -4,22 +4,22 @@
 	    <ol>
 	    	<% const today = page.today %>
 	        <% today.assorted.forEach(item => { %>
-	        	<li class="fragment"><%= item %></li>
+	        	<li><%= item %></li>
 	        <% }) %>
 	        <% if (today.theory) { %>
-			<li class="fragment">Theory
+			<li>Theory
 				<ol>
 					<% today.theory.forEach(item => { %>
-						<li class="fragment"><%= item %></li>
+						<li><%= item %></li>
 					<% }) %>
 				</ol>
 			</li>
 	        <% } %>
 	       	<% if (today.praxis) { %>
-			<li class="fragment">Praxis
+			<li>Praxis
 				<ol>
 					<% today.praxis.forEach(item => { %>
-						<li class="fragment"><%= item %></li>
+						<li><%= item %></li>
 					<% }) %>
 				</ol>
 			</li>

@@ -36,10 +36,16 @@
     "showSlides": true
 },
 {
-    "description": "The fifth week will cover integrating techniques into client relationship/team workflow. This includes evangelism, automation, auditing, project requirements, securing buy-in, content strategy, information architecture, wireframing & prototyping, and data evaluation.<br><br>Our praxis will include using the web with JAWS, using the mobile web with VoiceOver/TalkBack, reading analytics reports, and managing study participants."
+    "description": "The fifth week will cover integrating techniques into client relationship/team workflow. This includes evangelism, automation, auditing, project requirements, securing buy-in, content strategy, and data evaluation.",
+    "reading":
+    {
+        "title": "To be read with a screenreader: WebAIM Screen Reader User Survey #7 Results",
+        "link": "https://webaim.org/projects/screenreadersurvey7/"
+    },
+    "showSlides": true
 },
 {
-    "description": "Our sixth week will cover linting, as well as being a time to review any theory that we determine requires revisiting, or extra material that the class has determined would be of interest. Your final assignments will be distributed this week. The assignment will be to summarize your test findings and present them to the class. Our praxis will focus on history API best practices for accessibility, being a good 'hall monitor', and on-the-fly documentation."
+    "description": "Our sixth week will cover linting, content strategy, as well as being a time to review any theory that we determine requires revisiting, or extra material that the class has determined would be of interest. Your final assignments will be distributed this week. The assignment will be to summarize your test findings and present them to the class. Our praxis will focus on history API best practices for accessibility, being a good 'hall monitor', and on-the-fly documentation."
 },
 {
     "description": "In our seventh week, we will cover accessibility and state management in Vue and React, and creating and presenting usability reports."

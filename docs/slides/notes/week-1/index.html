@@ -7,7 +7,6 @@
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
-  <link rel="stylesheet" href="/a11y/assets/css/solarized.css">
   <style>
   	.slides > :not(section) {
   		display: none;
@@ -39,34 +38,34 @@
 	    <ol>
 	    	
 	        
-	        	<li class="fragment">Review</li>
+	        	<li>Review</li>
 	        
-	        	<li class="fragment">Discuss reading</li>
+	        	<li>Discuss reading</li>
 	        
-	        	<li class="fragment">Reviewing a test plan template</li>
+	        	<li>Reviewing a test plan template</li>
 	        
 	        
-			<li class="fragment">Theory
+			<li>Theory
 				<ol>
 					
-						<li class="fragment">End user</li>
+						<li>End user</li>
 					
-						<li class="fragment">The open web</li>
+						<li>The open web</li>
 					
-						<li class="fragment">Subjectivity</li>
+						<li>Subjectivity</li>
 					
-						<li class="fragment">Test script</li>
+						<li>Test script</li>
 					
 				</ol>
 			</li>
 	        
 	       	
-			<li class="fragment">Praxis
+			<li>Praxis
 				<ol>
 					
-						<li class="fragment">Reviewing Krug</li>
+						<li>Reviewing Krug</li>
 					
-						<li class="fragment">Auditing accessibility</li>
+						<li>Auditing accessibility</li>
 					
 				</ol>
 			</li>
@@ -506,9 +505,16 @@
 		</div>
 	</div>
 
-<script src="/a11y/assets/javascript/reveal.js"></script>
-<script>
-      Reveal.initialize();
+  <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js"></script>
+  <script>
+      Reveal.initialize({
+          dependencies: [
+                { src: '/a11y/assets/javascript/plugin/reveal-a11y.js', async: true, condition: function() { 
+                  return !!document.body.classList; 
+                } 
+            }]
+      });
     </script>
 </body>
 </html>
