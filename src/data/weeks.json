@@ -45,7 +45,12 @@
     "showSlides": true
 },
 {
-    "description": "Our sixth week will cover linting, content strategy, as well as being a time to review any theory that we determine requires revisiting, or extra material that the class has determined would be of interest. Your final assignments will be distributed this week. The assignment will be to summarize your test findings and present them to the class. Our praxis will focus on history API best practices for accessibility, being a good 'hall monitor', and on-the-fly documentation."
+    "description": "Our sixth week will cover mobile accessibility, content strategy, UAT vs usability, as well as being a time to review any theory that we determine requires revisiting. Your final assignments will be distributed this week. The assignment will be to summarize your test findings and present them to the class.",
+    "reading": {
+        "title": "Take a Gander - Snopes.com",
+        "link": "https://www.snopes.com/fact-check/take-a-gander/"
+    },
+    "showSlides": true
 },
 {
     "description": "In our seventh week, we will cover accessibility and state management in Vue and React, and creating and presenting usability reports."
