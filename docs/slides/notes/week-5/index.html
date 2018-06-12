@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-	  <meta charset="UTF-8">
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>The Sixth week | Accessibility + Usability</title>
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="/a11y/assets/css/styles.css">
-	</head>
-	<body class="post">
-		<section class="page">
+  <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
+  <style>
+  	.slides > :not(section) {
+  		display: none;
+  	}
+  	.reveal li > ol {
+		  list-style-type: lower-alpha; 
+  	}
+    .post-only {
+      display: none;
+    }
+    .reveal blockquote {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  
+	<div class="reveal">
+		<div class="slides">
+	      	<section>
+	      		<h1>The Sixth week</h1>
+	      	</section>
 			
-			
-				<nav><a href="/a11y" class="button large button--home">Home</a></nav>
-			
-		  <h1 class="page__title">The Sixth week</h1>
-		</section>
-		
 
 
 	<section class="slide-only">
@@ -421,6 +436,20 @@
     </div>
 </section>
 
+	
+		</div>
+	</div>
 
-	</body>
+  <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js"></script>
+  <script>
+      Reveal.initialize({
+          dependencies: [
+                { src: '/a11y/assets/javascript/plugin/reveal-a11y.js', async: true, condition: function() { 
+                  return !!document.body.classList; 
+                } 
+            }]
+      });
+    </script>
+</body>
 </html>
