@@ -6,7 +6,7 @@
 <title>The Seventh week | Accessibility + Usability</title>
 <meta name="description" content="Posts and slides"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/docs/assets/css/reveal.css">
+  <link rel="stylesheet" href="/a11y/assets/css/reveal.css">
   <style>
   	.slides > :not(section) {
   		display: none;
@@ -237,7 +237,7 @@
 					
 						<p><code>tree</code>/<code>treegrid</code> > <code>treeitem</code></p>
 					
-						<p><code>switch</code> (identical to <code>checkbox</code>, but strictly for values of on or off</p>
+						<p><code>switch</code> identical to <code>checkbox</code>, but strictly for values of on or off</p>
 					
 						<p><code>listbox</code> > <code>option</code></p>
 					
@@ -624,7 +624,7 @@
         	
 				
 					
-						<p>React seems to be a lot more on top of accessibility. Then even bother to mention it in <a href='https://reactjs.org/docs/accessibility.html' target='_blank'>their docs</a>!</p>
+						<p>React seems to be a lot more on top of accessibility. They even bother to mention it in <a href='https://reactjs.org/docs/accessibility.html' target='_blank'>their docs</a>!</p>
 					
 						<p>Aria attributes are supported in JSX (but note that they're lowercased instead of camelcased like most other attributes).</p>
 					
@@ -758,6 +758,20 @@
 					
 						<p>Most solutions won't be elegant though. It's up to you to be mindful of how resource-heavy your solutions are - and how certain you are of their efficacy.</p>
 					
+				
+        	
+        	
+        </div>
+    </div>
+</section>
+
+<section >
+    <div class="grid-x">
+        <div class="cell large-6 large-offset-3 medium-10 medium-offset-1">
+        	
+        	
+				
+					
 						<p>The more uncertain you are of a solution, the more you'll need to be prepared to present multiple options, and to speak to the pros and cons of each one.</p>
 					
 						<p>Consider laying out your solutions in a chart graded for issue severity and actionability.</p>
@@ -812,7 +826,7 @@
   <script>
       Reveal.initialize({
           dependencies: [
-                { src: '/docs/assets/javascript/plugin/reveal-a11y.js', async: true, condition: function() { 
+                { src: '/a11y/assets/javascript/plugin/reveal-a11y.js', async: true, condition: function() { 
                   return !!document.body.classList; 
                 } 
             }]
