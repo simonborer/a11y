@@ -122,128 +122,128 @@ today:
 
 <%- include(`${part}section`, {
   id: false,
-  style: "slide-only",
-  headline: '11:30',
-  list: false,
-  body: ["At 11:30 today we'll be helping to test the usability of the Humber Career Outlooks web app. Approach it as a participant, but while you're taking part, reflect on their methodology. We'll get to talk about what we thought about <em>their</em> testing in the lab. Would you have taken the same approach? Does this change how you'll interact with your test participants?"]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: "slide-only",
-  headline: 'Unpaid internships',
-  list: false,
-  body: ["https://www.labour.gov.on.ca/english/es/pubs/internships.php", "<blockquote><p>The Ministry of Labour is committed to ensuring fairness and protecting young workers. The fact that you are called an “intern” does not determine whether or not you are entitled to the protections of the Employment Standards Act, 2000 (ESA), including the minimum wage.</p><p>...The ESA does not apply to an individual who performs work <strong>under a program</strong> approved by a college of applied arts and technology or a university.</p><p>...If someone performing work as an unpaid intern is unsure of whether he or she is excluded from the ESA, he or she should call the Employment Standards Information Centre toll-free at 1-800-531-5551 for further information.</p>"]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: "slide-only",
-  headline: 'Reading without peeking',
-  list: false,
-  body: "How was it using a screenreader?"
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: "slide-only",
-  headline: 'Where are you at?',
-  list: false,
-  body: ["How do you feel about the testing so far?", "Are you confident that you'll be able to draw meaningful conclusions about the data?", "Did anything surprise you?", "What would you like to change going forward?", "What's difficult?", "What's easy?", "What's fun?", "What's not?"]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
   style: false,
-  headline: 'Differentiating UAT & Usability testing',
+  headline: 'Accessibility in Front-end JS Frameworks',
   list: false,
-  body: ["UAT and usability testing are both kinds of testing. As are regression testing, unit testing and integration testing. Tests have plans, requirements and scenarios."]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: false,
-  list: false,
-  body: ["<table><thead><tr><td>Usability</td><td>UAT</td></tr></thead><tbody><tr><td>Meant to determine whether users can learn, understand and use the product efficiently to achieve theirgoals.</td><td>Meant to determine whether the client is satisfied that the product meets their requirements.</td></tr><tr><td>Can happen before or during development, before or after launch.</td><td>Happens after development, but before launch.</td></tr> <tr><td>Tests whether users can achieve the result they want.</td><td>Tests whether the product produces the expected result.</td></tr> <tr><td>Meant to generate continuous improvements.</td><td>Meant to achieve final sign-off.</td></tr> <tr><td>Run by the software team.</td><td>Run by the client.</td></tr></tbody></table>"]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: "slide-only",
-  headline: 'OH NO POP QUIZ',
-  list: false,
-  body: ["Please go to <a href='http://etc.ch/Yfga' target='_blank'>the quiz</a>"]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: 'Mobile accessibility',
-  list: false,
-  body: ["The WCAG has <a href='https://www.w3.org/TR/IMPLEMENTING-UAAG20/mobile' target='_blank'>multiple documents</a> on <a href='https://www.w3.org/TR/mobile-accessibility-mapping/'>how accessibility standards translate to mobile</a>.", "It's mostly along the lines of 'don't try to cram your whole desktop site onto mobile', and 'just make sure that you're doing what you do on desktop', but with a few extra cautions."]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: false,
-  list: ["Take special pains to test resizing up to 200%.", "You definitely still have to have keyboard-only controls", "Touch targets are at least 9mm x 9mm, with adequate space between them (without magnification)", "Use mouseup or touchend events so that users can change their minds"],
-  body: false
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: false,
-  list: ["Gestures should be kept simple, and have alternatives", "Support either orientation", "Put important elements above the fold", "Provide easily discoverable instructions", "Set the keyboard to the type of data entry required", "No scrolljacking", "Show focus"],
-  body: false
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: "Accessible content - page titles",
-  list: false,
-  body: ["Page title should be unique and descriptive. If it's page 2 of 3, say so."]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: "Accessible content - headings",
-  list: false,
-  body: ["Headings should structure your document. Think of the way your information is structured - it's very rarely appropriate to have just an h1 and then p tags all the way down. Headings should provide meaning and context."]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: "Accessible content - alt text",
-  list: false,
-  body: "Alternative text should be your best effort to convey <em>all</em> of the relevant information in the image - no more, no less. This gets tricky when you get into things like graphs. Think of how WebAIM approached it in our reading this week."
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: "Accessible content - transcripts and captions",
-  list: false,
-  body: "Audio and video need transcriptions and/or captions. Keep an ear out for sounds that convey relevant information, and make sure they're included - not just the words."
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: "Accessible content - form labels, instructions and errors",
-  list: false,
-  body: "Be very clear about what's expected of a user, and how errors should be resolved. A red asterisk appearing suddenly adjacent to an input isn't helpful to everyone."
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: "Accessible content - beware things that look like text",
-  list: false,
-  body: "Be on the lookout for images with embedded text, or worse - OCR-resistant PDFs."
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: "Accessible content - ASCII",
-  list: false,
-  body: [`Think about what this sounds like: ¯\\_(ツ)_/¯.`, `For the same reason, write "16 to 17 years old" instead of "16-17 years old".`]
-}) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: false,
-  headline: "Accessible content - links",
-  list: ["Don't say they're links - the screenreader tells you", "Don't capitalize - screenreaders will read them out letter by letter", "Don't make the link text the url", "Keep links short - screenreaders won't skip them.", "Identify link behaviour - i.e. downloads, new windows, anchor links", "Don't embed link types identifications in your CSS", "Don't abuse javascript to do link-ish things with elements that aren't links (anchors or area tags)", "If an image is inside an anchor tag, it's alt text should refer to the link behaviour, as well as the image's information.", "Empty or broken links are just mean."],
-  body: "Via <a href='https://www.sitepoint.com/15-rules-making-accessible-links/' target='_blank'>sitepoint</a>"
+  body: ["Today we're going to look at <a href='https://stateofjs.com/2017/front-end/results' target='_blank'>the big three</a>.", "Let's keep in mind that >4% of users in the WebAIM survey were using IE 6, 7 or 8.", "<table><caption>Browser support of javascript frameworks</caption><tbody><tr><td>Vue</td><td>ES5-compliant browsers - IE9+</td></tr><tr><td>React</td><td>ES5-compliant browsers - IE9 and IE10 require polyfills</td></tr><tr><td>Angular</td><td>Modern browsers. Safari 7 & 8, IE9, 10 & 11, Android 4.1+ require polyfills.</td></tr></tbody></table>"]
 }) %>
 
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: 'Progressive enhancement',
+  list: false,
+  body: ["Within the last year, we've seen companies like Airbnb and Groupon tell Firefox and Safari users that they are 'optimized for Chrome' when their sites failed.", "What if your website, to borrow a phrase, just worked?", "Consider delivering your content in plain HTML, and then 'mustard-cutting' to deliver your CSS and Javascript."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Internet Explorer refuses to die.",
+  list: false,
+  body: ["<a href='https://netmarketshare.com/browser-market-share.aspx' target='_blank'>Internet Explorer market share is >12%.</a> That's more than Firefox. That's more than Edge, Safari and Opera combined.", "Internet Explorer fails to support <em>hundreds</em> of features that Chrome has implemented.", "Progressive enhancement is how we build for an internet that is increasingly fractured.", "Polyfills, autoprefixer, caniuse, modernizr; these are great things. Consider, though, simply delivering content that any client can access as a Minimum Viable Product.", "A List Apart has <a href='http://alistapart.com/article/the-slow-death-of-internet-explorer-and-future-of-progressive-enhancement' target='_blank'>a wonderful article</a> with some recommendations on how to mustard cut for both CSS and Javascript."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: 'What are you using your framework for?',
+  list: false,
+  body: ["Is it as a static site generator? Cool. Render on the server. Serving static HTML is waaaay faster."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Let's assume...",
+  list: false,
+  body: ["Let's assume you've got your fallbacks and polyfills in place. Let's assume SSR isn't an option. How do we make Vue, React and Angular accessible?"]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Accessibility in Angular",
+  list: false,
+  body: ["AngularJS 1.7 shipped with a module called ngAria which created hooks for some aria roles. Angular 2+ seems to not have anything similar. You're on your own!"]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Accessibility in React",
+  list: false,
+  body: ["React seems to be a lot more on top of accessibility. Then even bother to mention it in <a href='https://reactjs.org/docs/accessibility.html' target='_blank'>their docs</a>!", "Aria attributes are supported in JSX (but note that they're lowercased instead of camelcased like most other attributes)."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "A few gotchas with React",
+  list: false,
+  body: ["JSX has a tendency to break semantics though, especially with lists and tables, so get familiar with <Fragment>s and <></> syntax.", "The `for` attribute, used with labels, is written as `htmlFor` in JSX"]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "React A11y",
+  list: false,
+  body: ["<a href='https://github.com/reactjs/react-a11y' target='_blank'>react-a11y</a> is a promising looking tool for warning about potential accessibility issues in your React components."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Accessibility in Vue",
+  list: false,
+  body: ["Vue doesn't have any <a href='https://github.com/vuejs/vuejs.org/issues/974' target='_blank'>accessibility documentation... yet</a>.", "Emily Mears has written <a href='https://medium.com/@emilymears/getting-started-with-web-accessibility-in-vue-17e2c4ea0842' target='_blank'>a pretty great article</a> about accessibility in Vue. The main challenges are held in common with React - updating meta, handling focus and implementing aria.", "Vue is pretty great as a framework - it's easier to pick up and understand than other frameworks, it scales much more gracefully than React, and only updates the components that need re-rendering."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Controlling focus in client-side frameworks",
+  list: false,
+  body: ["All three frameworks aggressively re-render the DOM - that's kind of the point.", "Be aware that changes to the URL, and rendering of the virtual DOM can wreak havoc on focus. Each framework has methods for mitigating this with programmatic focus control: <a href='https://simplyaccessible.com/article/react-a11y/' target='_blank'>refs in React</a>; <a href='https://www.npmjs.com/package/vue-focus' target='_blank'>vue-focus in Vue</a>; <a href='https://docs.angularjs.org/api/ng/directive/ngFocus' target='_blank'>ngFocus in Angular</a>. Make sure you're familiar with the appropriate technique."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Presentations - turning data into stories",
+  list: false,
+  body: ["Right now you're generating data. Your work for your final assignment is <ol><li>understand the data</li><li>generate and compare solutions</li><li>tell a story</li></ol>"]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Presentations - understanding the data",
+  list: false,
+  body: ["First, think about what kind of data you're looking at. Is it quantitative? If so, compare it to a) industry standard benchmarks, and b) the needs of the client. Is the pageload time >2 seconds? Does your gazeplot completely miss the big sales banner?", "If it's qualitative, really listen to what people have told you (verbally or otherwise), and be careful not to project your own assumptions. Think about it individually and collectively - was something annoying, but only to one person? Was some UI element a little bit frustrating for every single user?", "Don't forget, 'what worked' can be as important as 'what didn't'."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Presentations - solutions",
+  list: false,
+  body: ["Now that you've understood your data, it's time to generate some solutions.", "Keep solutions specific and positive - 'don't use hamburger menus' isn't an action, it's a non-action.", "The gold standard is 'elegance', which is just a fancy way of saying 'cheap, fast, easy and effective'.", "Most solutions won't be elegant though. It's up to you to be mindful of how resource-heavy your solutions are - and how certain you are of their efficacy.", "The more uncertain you are of a solution, the more you'll need to be prepared to present multiple options, and to speak to the pros and cons of each one.", "Consider laying out your solutions in a chart graded for issue severity and actionability."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: "Presentations - telling a story",
+  list: false,
+  body: ["The point of all this is to give people something they can use. Data is boring. If your report puts them to sleep, they won't use it. Anecdotes are fun, but lack credibility. People won't use your report if they don't feel they can trust it.", "Use enough data to build a credible story, but focus on appealing to the things that people really pay attention to."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: false,
+  list: false,
+  body: ["Be funny. Be informal. Think of your report as having <a href='http://channel101.wikia.com/wiki/Story_Structure_101:_Super_Basic_Shit' target='_blank'>a beginning, middle, and end</a>. Tell the story of the website, the testing, the results, and the solutions. And yes, even the data.", "The best way to do this is to focus on people. Talk about yourself, the participants, the website's audience, the client. That's the only real way to help us all figure out why the data matters."]
+}) %>
