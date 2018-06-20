@@ -53,7 +53,12 @@
     "showSlides": true
 },
 {
-    "description": "In our seventh week, we will cover accessibility and state management in Vue and React, and creating and presenting usability reports."
+    "description": "In our seventh week, we will cover accessibility and state management in Vue and React, and creating and presenting usability reports.",
+    "reading": {
+        "title": "The Juicy Details - Dan Harmon",
+        "link": "http://channel101.wikia.com/wiki/Story_Structure_104:_The_Juicy_Details"
+    }
+
 },
 {
     "description": "In our eighth and final week, you will present your final assignment to the class."

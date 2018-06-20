@@ -43,7 +43,7 @@ today:
   id: false,
   style: false,
   headline: false,
-  body: ["Remember that the spec tells us that we should use native semantics when they are available.", "If it's a button, use a <button>."],
+  body: ["Remember that the spec tells us that we should use native semantics when they are available.", `If it's a button, use a < button >.`],
   list: false
 }) %>
 
@@ -59,7 +59,7 @@ today:
   id: false,
   style: false,
   headline: 'role="button"',
-  body: ["Let's say, for whatever reason, you need to make a button out of something that's not <button>, <input type='button' />,  <input type='submit' />, <input type='reset' /> or <input type='image' />.", "`role='button'` identifies any element as a button to a screenreader. Use this in conjunction with `tabindex='0'` - the role itself does not make the element focusable.", "Remember, too, that a native HTML button will fire an onclick event when space or enter are pressed - so you're also responsible for recreating that native functionality."],
+  body: ["Let's say, for whatever reason, you need to make a button out of something that's not < button >, < input type='button' />,  < input type='submit' />, < input type='reset' /> or < input type='image' />.", "<code>role='button'</code> identifies any element as a button to a screenreader. Use this in conjunction with <code>tabindex='0'</code> - the role itself does not make the element focusable.", "Remember, too, that a native HTML button will fire an onclick event when space or enter are pressed - so you're also responsible for recreating that native functionality."],
   list: false
 }) %>
 
@@ -68,7 +68,23 @@ today:
   id: false,
   style: false,
   headline: 'More roles! - widgets',
-  body: ["checkbox", "dialog (this can be a modal, or not)", "link", "log (i.e. a chat log)", "marquee (like a log, but not vital or linear, i.e. a carousel or stock ticker)", "progressbar", "radio", "scrollbar", "slider (i.e. a range slider or volume control)", "spinbutton (a value selection input with up and down arrows)", "status (a status update message, i.e. `your changes have been saved`", "tablist > tab + tabpanel", "grid > row > rowheader + cell + columnheader", "menubar > menu > menuitem + menuitemcheckbox", "textbox", "timer", "tooltip", "tree/treegrid > treeitem", "switch (identical to checkbox, but strictly for values of on or off", "listbox > option", "radiogroup > radio" ],
+  body: ["<code>checkbox</code>", "<code>dialog</code> (this can be a modal, or not)", "<code>link</code>", "<code>log</code> (i.e. a chat log)", "<code>marquee</code> (like a <code>log</code>, but not vital or linear, i.e. a carousel or stock ticker)", "<code>progressbar</code>", "<code>radio</code>", "<code>scrollbar</code>"],
+  list: false
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: false,
+  body: ["<code>slider</code> (i.e. a range slider or volume control)", "<code>spinbutton</code> (a value selection input with up and down arrows)", "<code>status</code> (a status update message, i.e. `your changes have been saved`", "<code>tablist</code> > <code>tab</code> + <code>tabpanel</code>", "<code>grid</code> > <code>row</code> > <code>rowheader</code> + <code>cell</code> + <code>columnheader</code>", "<code>menubar</code> > <code>menu</code> > <code>menuitem</code> + <code>menuitemcheckbox</code>", "<code>textbox</code>", "<code>timer</code>", "<code>tooltip</code>" ],
+  list: false
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: false,
+  body: ["<code>tree</code>/<code>treegrid</code> > <code>treeitem</code>", "<code>switch</code> identical to <code>checkbox</code>, but strictly for values of on or off", "<code>listbox</code> > <code>option</code>", "<code>radiogroup</code> > <code>radio</code>" ],
   list: false
 }) %>
 
@@ -76,7 +92,15 @@ today:
   id: false,
   style: false,
   headline: 'Even more roles! - document structure',
-  body: ["article", "definition", "directory (i.e. table of contents)", "document", "group (of UI elements not in a perceivable page section)", "heading", "img (useful in case of background images)", "list > listitem", "math (there is an entire markup language for mathy stuff! it's called <a href='https://www.w3.org/Math/whatIsMathML.html' target='_blank'>MathML</a> and can be called into other markup, like HTML)", "note", "presentation - similar in function to aria-hidden; this tells the screenreader that the element is decorative, but <a href='http://john.foliot.ca/aria-hidden/' target='_blank'>support for it on natively focusable elements is interesting</a>.", "region", "separator", "toolbar"],
+  body: ["<code>article</code>", "<code>definition</code>", "<code>directory</code> (i.e. table of contents)", "<code>document</code>", "<code>group</code> (of UI elements not in a perceivable page section)", "<code>heading</code>", "<code>img</code> (useful in case of background images)", "<code>list</code> > <code>listitem</code>"],
+  list: false
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: false,
+  body: ["<code>math</code> (there is an entire markup language for mathy stuff! it's called <a href='https://www.w3.org/Math/whatIsMathML.html' target='_blank'>MathML</a> and can be called into other markup, like HTML)", "<code>note</code>", "<code>presentation</code> - similar in function to aria-hidden; this tells the screenreader that the element is decorative, but <a href='http://john.foliot.ca/aria-hidden/' target='_blank'>support for it on natively focusable elements is interesting</a>.", "<code>region</code>", "<code>separator</code>", "<code>toolbar</code>"],
   list: false
 }) %>
 
@@ -84,7 +108,7 @@ today:
   id: false,
   style: false,
   headline: 'And finally... more roles! - landmarks',
-  body: ["application - for when your HTML document behaves completely different from a standard html document; probably don't use this. It turns off all standard keyboard shortcuts in most screenreaders.", "banner - analogous to <header>", "complementary - like <aside>", "contentinfo - like <footer>", "form", "main", "navigation", "search"],
+  body: ["<code>application</code> - for when your HTML document behaves completely different from a standard html document; probably don't use this. It turns off all standard keyboard shortcuts in most screenreaders.", "<code>banner</code> - analogous to < header >", "<code>complementary</code> - like < aside >", "<code>contentinfo</code> - like < footer >", "<code>form</code>", "<code>main</code>", "<code>navigation</code>", "<code>search</code>"],
   list: false
 }) %>
 
@@ -92,15 +116,30 @@ today:
   id: false,
   style: false,
   headline: "Widget attributes",
-  body: [`role="combobox|textbox" aria-autocomplete="none|inline|list|both"`, `role="checkbox|switch|..." aria-checked="true|false|mixed"`, `aria-current="page|step|date|location|time|true|false"`, `aria-disabled="true|false"`, `aria-expanded="true|false"`, `aria-haspopup="true|false|menu|listbox|tree|grid|dialog"`, `aria-hidden="true|false|undefined"`, `aria-invalid="true|false|grammar|spelling"`, `aria-label={string} only for invisible text`, `role="grid|heading|listitem|row|tablist" aria-level={integer}`, `role="textbox" aria-multiline="true|false"`, `role="grid|listbox|tablist|tree" aria-multiselectable="true|false"`, `role="scrollbar|select|separator|slider|tablist|toolbar" aria-orientation="horizontal|vertical|undefined"`, `role="button" aria-pressed="true|false|mixed"`, `role=checkbox|combobox|grid|gridcell|listbox|radiogroup|slider|spinbutton|textbox" aria-readonly="true|false"`, `role="combobox|gridcell|listbox|radiogroup|spinbutton|textbox|tree" aria-required="true|false"`, `role="gridcell|option|row|tab" aria-selected="true|false|undefined"`, `role="columnheader|rowheader" aria-sort="ascending|descending|none|other"`, `role="range|scrollbar|separator|slider|spinbutton" aria-valuemax={number} aria-valuemin={number} aria-valuenow={number}`, `role="range|separator" aria-valuetext={string}`],
+  body: [`<code>role="combobox|textbox" aria-autocomplete="none|inline|list|both"</code>`, `<code>role="checkbox|switch|..." aria-checked="true|false|mixed"</code>`, `<code>aria-current="page|step|date|location|time|true|false"</code>`, `<code>aria-disabled="true|false"</code>`, `aria-expanded="true|false"</code>`, `<code>aria-haspopup="true|false|menu|listbox|tree|grid|dialog"</code>`, `<code>aria-hidden="true|false|undefined"</code>`, `<code>aria-invalid="true|false|grammar|spelling"</code>`, `<code>aria-label={string}</code> only for invisible text`],
   list: false
 }) %>
 
 <%- include(`${part}section`, {
   id: false,
   style: false,
+  headline: false,
+  body: [`<code>role="grid|heading|listitem|row|tablist" aria-level={integer}</code>`, `<code>role="textbox" aria-multiline="true|false"</code>`, `<code>role="grid|listbox|tablist|tree" aria-multiselectable="true|false"</code>`, `<code>role="scrollbar|select|separator|slider|tablist|toolbar" aria-orientation="horizontal|vertical|undefined"</code>`, `<code>role="button" aria-pressed="true|false|mixed"</code>`, `<code>role=checkbox|combobox|grid|gridcell|listbox|radiogroup|slider|spinbutton|textbox" aria-readonly="true|false"</code>`, `<code>role="combobox|gridcell|listbox|radiogroup|spinbutton|textbox|tree" aria-required="true|false"</code>`, `<code>role="gridcell|option|row|tab" aria-selected="true|false|undefined"</code>`],
+  list: false
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: false,
+  body: [`<code>role="columnheader|rowheader" aria-sort="ascending|descending|none|other"</code>`, `<code>role="range|scrollbar|separator|slider|spinbutton" aria-valuemax={number} aria-valuemin={number} aria-valuenow={number}</code>`, `<code>role="range|separator" aria-valuetext={string}</code>`],
+  list: false
+}) %>
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
   headline: "Live region attributes",
-  body: [`aria-live="polite|assertive|off"`, `aria-live="polite" aria-atomic="true|false"`, `aria-live="polite" aria-relevant="additions|text|removals|all"`, `aria-live="assertive" aria-busy="true|false"`],
+  body: [`<code>aria-live="polite|assertive|off"</code>`, `<code>aria-live="polite" aria-atomic="true|false"</code>`, `<code>aria-live="polite" aria-relevant="additions|text|removals|all"</code>`, `<code>aria-live="assertive" aria-busy="true|false"</code>`],
   list: false
 }) %>
 
@@ -108,7 +147,7 @@ today:
   id: false,
   style: false,
   headline: "Implicit live region attributes",
-  body: [`Several roles have implicit live region values:`, `role="alert" has an implicit aria-live="assertive"`, `role="status" and role="log" have an implicit aria-live="polite"`, `role="timer" and role="marquee" have an implicit aria-live="off"`, `These can be overridden by explicitly declaring aria-live values.`],
+  body: [`Several roles have implicit live region values:`, `<code>role="alert"</code> has an implicit <code>aria-live="assertive"</code>`, `<code>role="status"</code> and <code>role="log"</code> have an implicit <code>aria-live="polite"</code>`, `<code>role="timer"</code> and <code>role="marquee"</code> have an implicit <code>aria-live="off"</code>`, `These can be overridden by explicitly declaring <code>aria-live</code> values.`],
   list: false
 }) %>
 
@@ -116,7 +155,15 @@ today:
   id: false,
   style: false,
   headline: "Relationship attributes",
-  body: [`role="application|composite|group|textbox" aria-activedescendant={id}`, `aria-controls={id}`, `aria-describedby={id} similar to aria-labelledby, but verbose instead of concise`, `aria-labelledby={id}`, `aria-flowto={id} gives the user the option to move to an element, overriding the source order`, `aria-owns={id} Defines a parent-child relationship when one isn't semantically apparent. To understand how this is different from aria-controls, imagine a carousel. The arrows on the left and right would have aria-controls attributes. The dots at the bottom that correlate to individual slides would have aria-owns attributes.`, `role="article|listitem|menuitem|option|radio|tab" aria-setsize={integer} aria-posinset={integer} Only required when not all elements from the set are included in the DOM.`],
+  body: [`<code>role="application|composite|group|textbox" aria-activedescendant={id}</code>`, `<code>aria-controls={id}</code>`, `<code>aria-describedby={id}</code> similar to <code>aria-labelledby</code>, but verbose instead of concise`, `<code>aria-labelledby={id}</code>`, `<code>aria-flowto={id}</code> gives the user the option to move to an element, overriding the source order`],
+  list: false
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: false,
+  body: [`<code>aria-owns={id}</code> Defines a parent-child relationship when one isn't semantically apparent. To understand how this is different from <code>aria-controls</code>, imagine a carousel. The arrows on the left and right would have <code>aria-controls</code> attributes. The dots at the bottom that correlate to individual slides would have <code>aria-owns</code> attributes.`, `<code>role="article|listitem|menuitem|option|radio|tab" aria-setsize={integer} aria-posinset={integer}</code> Only required when not all elements from the set are included in the DOM.`],
   list: false
 }) %>
 
@@ -173,7 +220,7 @@ today:
   style: false,
   headline: "Accessibility in React",
   list: false,
-  body: ["React seems to be a lot more on top of accessibility. Then even bother to mention it in <a href='https://reactjs.org/docs/accessibility.html' target='_blank'>their docs</a>!", "Aria attributes are supported in JSX (but note that they're lowercased instead of camelcased like most other attributes)."]
+  body: ["React seems to be a lot more on top of accessibility. They even bother to mention it in <a href='https://reactjs.org/docs/accessibility.html' target='_blank'>their docs</a>!", "Aria attributes are supported in JSX (but note that they're lowercased instead of camelcased like most other attributes)."]
 }) %>
 
 <%- include(`${part}section`, {
@@ -229,7 +276,15 @@ today:
   style: false,
   headline: "Presentations - solutions",
   list: false,
-  body: ["Now that you've understood your data, it's time to generate some solutions.", "Keep solutions specific and positive - 'don't use hamburger menus' isn't an action, it's a non-action.", "The gold standard is 'elegance', which is just a fancy way of saying 'cheap, fast, easy and effective'.", "Most solutions won't be elegant though. It's up to you to be mindful of how resource-heavy your solutions are - and how certain you are of their efficacy.", "The more uncertain you are of a solution, the more you'll need to be prepared to present multiple options, and to speak to the pros and cons of each one.", "Consider laying out your solutions in a chart graded for issue severity and actionability."]
+  body: ["Now that you've understood your data, it's time to generate some solutions.", "Keep solutions specific and positive - 'don't use hamburger menus' isn't an action, it's a non-action.", "The gold standard is 'elegance', which is just a fancy way of saying 'cheap, fast, easy and effective'.", "Most solutions won't be elegant though. It's up to you to be mindful of how resource-heavy your solutions are - and how certain you are of their efficacy."]
+}) %>
+
+<%- include(`${part}section`, {
+  id: false,
+  style: false,
+  headline: false,
+  list: false,
+  body: ["The more uncertain you are of a solution, the more you'll need to be prepared to present multiple options, and to speak to the pros and cons of each one.", "Consider laying out your solutions in a chart graded for issue severity and actionability."]
 }) %>
 
 <%- include(`${part}section`, {
