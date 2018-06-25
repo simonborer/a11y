@@ -14,13 +14,8 @@ today:
 <% const part = '../../../partials/'; %>
 <% const basePath = site.basePath %>
 <%- include(`${part}today`) %>
-<%- include(`${part}section`, {
-  id: false,
-  style: "slide-only",
-  headline: 'Attendance',
-  body: `Please <a href="http://etc.ch/Kpep" target='_blank'>mark your attendance down</a>.`,
-  list: false
-}) %>
+
+<%- include(`${part}attendance`) %>
 
 <%- include(`${part}section`, {
   id: false,
