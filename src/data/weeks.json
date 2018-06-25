@@ -62,5 +62,10 @@
 
 },
 {
-    "description": "In our eighth and final week, you will present your final assignment to the class."
+    "description": "In our eighth and final week, you will present your final assignment to the class.",
+    "showSlides": true,
+    "reading": {
+        "title": "Plant Friends - Dickson Chow",
+        "link": "http://dicksonchow.com/plant-friends"
+    }
 }]
